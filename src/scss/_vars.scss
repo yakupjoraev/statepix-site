@@ -1,0 +1,41 @@
+// Container & Breakpoints
+@use 'sass:math';
+$containerWidth: 1200;
+$containerPadding: 40;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1450: 1449.98+px;
+$breakpoint992: 991.98+px;
+$breakpoint768: 767.98+px;
+$breakpoint480: 479.98+px;
+
+// Burger Menu
+$burgerBreakpoint: $breakpoint992;
+$burgerColor: 'black';
+$burgerActiveColor: 'white';
+
+:root {
+  //fonts
+  --font-family: "Vela Sans", sans-serif;
+  --second-family: "Helvetica", sans-serif;
+
+
+  //colors
+  --black: #251725;
+  --black-60: rgba(37, 23, 37, 0.6);
+  --black-40: rgba(37, 23, 37, 0.4);
+  --black-10: rgba(37, 23, 37, 0.1);
+  --grey: #a499ce;
+  --light-gray: #ebedfd;
+  --background: #fbfbff;
+  --white: #fff;
+  --green: #219f70;
+  --violent: #df87f1;
+  --icon: #8055bb;
+  --dark-violent: #af56ff;
+  --green: #a1c665;
+  --green-dark-blue: #1288aa;
+  --violent-dark-background: #e9f;
+  --green-light: #2de4a0;
+  --blue-light: #74c5ff;
+  --blue: #1a9fff;
+}
