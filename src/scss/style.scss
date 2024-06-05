@@ -6,8 +6,11 @@
 @import './base';
 
 // Sections or Pages SCSS-files imports
-// @import './header';
-// @import './footer';
+@import './header';
+@import './breadcrumbs';
+@import './aside';
+@import './settings';
+@import './footer';
 
 // Libs
 // @import './libs/swiper';
