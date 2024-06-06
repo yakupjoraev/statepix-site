@@ -246,43 +246,32 @@
     </div>
 
 
-    <form action="#" class="settings__steps">
-      <h3 class="settings__steps-title">
-        Your wallet is already ready for use,
-        all that remains is to <span>configure F2A</span> to reliably protect your funds
-      </h3>
+    <form class="settings__changes" action="#">
+      <div class="settings__changes-inner">
+        <h3 class="settings__changes-title">E-mail</h3>
 
-      <div class="settings__steps-steps">
-        <div class="settings__steps-step active">
-          <div class="settings__steps-border"></div>
-          <p class="settings__steps-text">Install</p>
+        <div class="settings__changes-rows">
+          <div class="settings__changes-row">
+            <label class="settings__changes-label" for="">NEW E-MAIL</label>
+            <div class="settings__changes-input-wrapper">
+              <input class="settings__changes-input" type="email" placeholder="Your email"
+                value="john_johnson@gmail.com">
+              <img class="settings__changes-icon" width="20" height="20" src="./img/icons/settings-mail.svg" alt="icon">
+            </div>
+          </div>
+
+          <div class="settings__changes-row">
+            <label class="settings__changes-label" for="">E-MAIL CODE</label>
+            <div class="settings__changes-input-wrapper">
+              <input class="settings__changes-input" type="password" placeholder="Your phone" value="165161515">
+              <img class="settings__changes-icon" width="20" height="20" src="./img/icons/settings-lock.svg" alt="icon">
+            </div>
+          </div>
         </div>
 
-        <div class="settings__steps-step active">
-          <div class="settings__steps-border"></div>
-          <p class="settings__steps-text">Setting</p>
-        </div>
 
-        <div class="settings__steps-step active">
-          <div class="settings__steps-border"></div>
-          <p class="settings__steps-text">Scan</p>
-        </div>
-
-        <div class="settings__steps-step">
-          <div class="settings__steps-border"></div>
-          <p class="settings__steps-text">Enter Code</p>
-        </div>
+        <button type="button" class="settings__steps-btn btn">CONFIRM</button>
       </div>
-
-      <div class="settings__steps-label">Scan QR with Google Autentificator <br /> and press "Next" </div>
-
-      <div class="settings__steps-qodes">
-        <div class="settings__steps-qode">
-          <img width="148" height="148" src="./img/settings/qode.png" alt="">
-        </div>
-      </div>
-
-      <button type="button" class="settings__steps-btn btn">NEXT STEP</button>
     </form>
   </div>
 </section>

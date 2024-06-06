@@ -1,135 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index</title>
-  <link rel="stylesheet" href="./css/style.min.css">
-</head>
-
-<body class="main__body">
-  <div class="wrapper">
-    <!-- Header -->
-    <header class="header">
-  <!-- Navbar -->
-  <nav class="nav">
-    <div class="navbar">
-      <div class="logo">
-        <a class="logo__link" href="#">
-          <img class="logo__img" width="100" height="21" src="./img/logo.svg" alt="logo icon">
-        </a>
-      </div>
-
-      <ul class="menu">
-        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Портфолио</a></li>
-        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Инфо</a></li>
-        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
-        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
-        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
-      </ul>
-      <div class="burger">
-        <span></span>
-      </div>
-    </div>
-  </nav>
-</header>
-
-    <div class="inner">
-      <aside class="aside">
-  <div class="aside__inner">
-    <ul class="aside__list">
-      <li class="aside__item active">
-        <a class="aside__linkn" href="#">
-          <div class="aside__link-icon">
-            <img width="15" height="15" src="./img/icons/aside-1.svg" alt="icon">
-          </div>
-
-          <p class="aside__link-text">Objects</p>
-        </a>
-      </li>
-
-      <li class="aside__item">
-        <a class="aside__linkn" href="#">
-          <div class="aside__link-icon">
-            <img width="15" height="15" src="./img/icons/aside-2.svg" alt="icon">
-          </div>
-
-          <p class="aside__link-text">Wallet</p>
-        </a>
-      </li>
-
-      <li class="aside__item">
-        <a class="aside__linkn" href="#">
-          <div class="aside__link-icon">
-            <img width="15" height="15" src="./img/icons/aside-3.svg" alt="icon">
-          </div>
-
-          <p class="aside__link-text">Orders</p>
-        </a>
-      </li>
-
-      <li class="aside__item">
-        <a class="aside__linkn" href="#">
-          <div class="aside__link-icon">
-            <img width="15" height="15" src="./img/icons/aside-4.svg" alt="icon">
-          </div>
-
-          <p class="aside__link-text">History</p>
-        </a>
-      </li>
-
-      <li class="aside__item">
-        <a class="aside__linkn" href="#">
-          <div class="aside__link-icon">
-            <img width="15" height="15" src="./img/icons/aside-5.svg" alt="icon">
-          </div>
-
-          <p class="aside__link-text">Favorite</p>
-        </a>
-      </li>
-
-      <li class="aside__item">
-        <a class="aside__linkn" href="#">
-          <div class="aside__link-icon">
-            <img width="15" height="15" src="./img/icons/aside-6.svg" alt="icon">
-          </div>
-
-          <p class="aside__link-text">Settings</p>
-        </a>
-      </li>
-    </ul>
-
-    <div class="aside__help">
-      <div class="aside__help-icon">
-        <img width="24" height="24" src="./img/icons/aside-help.svg" alt="icon">
-      </div>
-
-      <h4 class="aside__help-label">Need help?</h4>
-      <p class="aside__help-text">Please check our docs</p>
-
-      <a class="aside__help-btn" href="#">DOCUMENTATION</a>
-    </div>
-  </div>
-</aside>
-
-      <!-- Content -->
-      <div class="content">
-
-        <!-- Breadcrumbs -->
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Pages</a></li>
-            <li class="breadcrumbs__item">Settings</li>
-          </ul>
-        </div>
-
-        <!-- Title -->
-        <h1 class="title">Settings</h1>
-
-        <!-- Sections -->
-        <section class="settings">
+<section class="settings">
   <div class="settings__inner">
     <div class="settings__security">
       <h2 class="settings__title">Security</h2>
@@ -263,7 +132,7 @@
           <p class="settings__steps-text">Setting</p>
         </div>
 
-        <div class="settings__steps-step active">
+        <div class="settings__steps-step">
           <div class="settings__steps-border"></div>
           <p class="settings__steps-text">Scan</p>
         </div>
@@ -274,42 +143,16 @@
         </div>
       </div>
 
-      <div class="settings__steps-label">Scan QR with Google Autentificator <br /> and press "Next" </div>
+      <div class="settings__steps-label">Set up the device as described: </div>
 
-      <div class="settings__steps-qodes">
-        <div class="settings__steps-qode">
-          <img width="148" height="148" src="./img/settings/qode.png" alt="">
-        </div>
-      </div>
+      <ul class="settings__steps-points">
+        <li class="settings__steps-point">Open Google Authenticator </li>
+        <li class="settings__steps-point">Click "+"</li>
+        <li class="settings__steps-point">Select scan QR code</li>
+        <li class="settings__steps-point">Click "Next" on this page</li>
+      </ul>
 
       <button type="button" class="settings__steps-btn btn">NEXT STEP</button>
     </form>
   </div>
 </section>
-
-
-        <!-- Footer -->
-        <footer class="footer">
-  <div class="footer__inner">
-    <p class="footer__copy">@ 2024. All rights reserved</p>
-
-    <nav class="footer__nav">
-      <ul class="footer__list">
-        <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
-        <li class="footer__item"><a class="footer__link" href="#">Terms</a></li>
-        <li class="footer__item"><a class="footer__link" href="#">Blog</a></li>
-        <li class="footer__item"><a class="footer__link" href="#">Contacts</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
-      </div>
-    </div>
-
-  </div>
-
-</body>
-
-<script src="./js/scripts.min.js"></script>
-
-</html>

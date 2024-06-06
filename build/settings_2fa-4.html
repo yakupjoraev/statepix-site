@@ -2,22 +2,335 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="main__body">
+  <div class="wrapper">
     <!-- Header -->
-    
+    <header class="header">
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="navbar">
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <img class="logo__img" width="100" height="21" src="./img/logo.svg" alt="logo icon">
+        </a>
+      </div>
 
-    <!-- Main Page -->
-    <main></main>
+      <ul class="menu">
+        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Портфолио</a></li>
+        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Инфо</a></li>
+        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
+        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
+        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
+      </ul>
+      <div class="burger">
+        <span></span>
+      </div>
+    </div>
+  </nav>
+</header>
 
-    <!-- Footer -->
-    
+    <div class="inner">
+      <aside class="aside">
+  <div class="aside__inner">
+    <ul class="aside__list">
+      <li class="aside__item active">
+        <a class="aside__linkn" href="#">
+          <div class="aside__link-icon">
+            <img width="15" height="15" src="./img/icons/aside-1.svg" alt="icon">
+          </div>
+
+          <p class="aside__link-text">Objects</p>
+        </a>
+      </li>
+
+      <li class="aside__item">
+        <a class="aside__linkn" href="#">
+          <div class="aside__link-icon">
+            <img width="15" height="15" src="./img/icons/aside-2.svg" alt="icon">
+          </div>
+
+          <p class="aside__link-text">Wallet</p>
+        </a>
+      </li>
+
+      <li class="aside__item">
+        <a class="aside__linkn" href="#">
+          <div class="aside__link-icon">
+            <img width="15" height="15" src="./img/icons/aside-3.svg" alt="icon">
+          </div>
+
+          <p class="aside__link-text">Orders</p>
+        </a>
+      </li>
+
+      <li class="aside__item">
+        <a class="aside__linkn" href="#">
+          <div class="aside__link-icon">
+            <img width="15" height="15" src="./img/icons/aside-4.svg" alt="icon">
+          </div>
+
+          <p class="aside__link-text">History</p>
+        </a>
+      </li>
+
+      <li class="aside__item">
+        <a class="aside__linkn" href="#">
+          <div class="aside__link-icon">
+            <img width="15" height="15" src="./img/icons/aside-5.svg" alt="icon">
+          </div>
+
+          <p class="aside__link-text">Favorite</p>
+        </a>
+      </li>
+
+      <li class="aside__item">
+        <a class="aside__linkn" href="#">
+          <div class="aside__link-icon">
+            <img width="15" height="15" src="./img/icons/aside-6.svg" alt="icon">
+          </div>
+
+          <p class="aside__link-text">Settings</p>
+        </a>
+      </li>
+    </ul>
+
+    <div class="aside__help">
+      <div class="aside__help-icon">
+        <img width="24" height="24" src="./img/icons/aside-help.svg" alt="icon">
+      </div>
+
+      <h4 class="aside__help-label">Need help?</h4>
+      <p class="aside__help-text">Please check our docs</p>
+
+      <a class="aside__help-btn" href="#">DOCUMENTATION</a>
+    </div>
+  </div>
+</aside>
+
+      <!-- Content -->
+      <div class="content">
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Pages</a></li>
+            <li class="breadcrumbs__item">Settings</li>
+          </ul>
+        </div>
+
+        <!-- Title -->
+        <h1 class="title">Settings</h1>
+
+        <!-- Sections -->
+        <section class="settings">
+  <div class="settings__inner">
+    <div class="settings__security">
+      <h2 class="settings__title">Security</h2>
+
+      <div class="settings__rows">
+        <div class="settings__row">
+          <div class="settings__info">
+            <img class="settings__info-icon" width="16" height="16" src="./img/icons/lock-closed.svg"
+              alt="lock-closed icon">
+
+            <div class="settings__info-texts">
+              <h3 class="settings__info-label">Authenticator App</h3>
+              <p class="settings__info-text">Use Google Authenticator to protect your account and transactions.</p>
+            </div>
+          </div>
+
+          <div class="settings__actions">
+            <div class="settings__action">
+              <img class="settings__action-icon" width="16" height="16" src="./img/icons/settings-check.svg"
+                alt="cjeck icon">
+
+              <span>On</span>
+            </div>
+            <button type="button" class="settings__action-btn">MANAGE</button>
+          </div>
+        </div>
+
+        <div class="settings__row">
+          <div class="settings__info">
+            <img class="settings__info-icon" width="16" height="16" src="./img/icons/mail.svg" alt="mail icon">
+
+            <div class="settings__info-texts">
+              <h3 class="settings__info-label">Email</h3>
+              <p class="settings__info-text">Use your email to protect your account and transactions.</p>
+            </div>
+          </div>
+
+          <div class="settings__actions">
+            <div class="settings__action">
+              <span>john***@gmail.com</span>
+            </div>
+            <button type="button" class="settings__action-btn">MANAGE</button>
+          </div>
+        </div>
+
+        <div class="settings__row">
+          <div class="settings__info">
+            <img class="settings__info-icon" width="16" height="16" src="./img/icons/call.svg" alt="call icon">
+
+            <div class="settings__info-texts">
+              <h3 class="settings__info-label">Phone Number</h3>
+              <p class="settings__info-text">Use your phone number to protect your account and transactions.</p>
+            </div>
+          </div>
+
+          <div class="settings__actions">
+            <div class="settings__action">
+              <img class="settings__action-icon" width="16" height="16" src="./img/icons/settings-check.svg"
+                alt="cjeck icon">
+              <span>+123***789</span>
+            </div>
+            <button type="button" class="settings__action-btn">MANAGE</button>
+          </div>
+        </div>
+
+        <div class="settings__row">
+          <div class="settings__info">
+            <img class="settings__info-icon" width="16" height="16" src="./img/icons/key.svg" alt="key icon">
+
+            <div class="settings__info-texts">
+              <h3 class="settings__info-label">Login Password</h3>
+              <p class="settings__info-text">Login password is used to log in to your account.</p>
+            </div>
+          </div>
+
+          <div class="settings__actions">
+            <button type="button" class="settings__action-btn">MANAGE</button>
+          </div>
+        </div>
+
+        <div class="settings__row">
+          <div class="settings__info">
+            <img class="settings__info-icon" width="16" height="16" src="./img/icons/phone-portrait.svg"
+              alt="phone-portrait icon">
+
+            <div class="settings__info-texts">
+              <h3 class="settings__info-label">My Devices</h3>
+              <p class="settings__info-text">Manage devices that have login status, and view your device history.</p>
+            </div>
+          </div>
+
+          <div class="settings__actions">
+            <button type="button" class="settings__action-btn">MANAGE</button>
+          </div>
+        </div>
+
+        <div class="settings__row">
+          <div class="settings__info">
+            <img class="settings__info-icon" width="16" height="16" src="./img/icons/log-out.svg" alt="log-out icon">
+
+            <div class="settings__info-texts">
+              <h3 class="settings__info-label">Account Activity</h3>
+              <p class="settings__info-text">Last login: 2024-05-27 09:18:26<br />
+                Suspicious account activity?</p>
+            </div>
+          </div>
+
+          <div class="settings__actions">
+            <button type="button" class="settings__action-btn">Disable Account</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <form action="#" class="settings__steps">
+      <h3 class="settings__steps-title">
+        Your wallet is already ready for use,
+        all that remains is to <span>configure F2A</span> to reliably protect your funds
+      </h3>
+
+      <div class="settings__steps-steps">
+        <div class="settings__steps-step active">
+          <div class="settings__steps-border"></div>
+          <p class="settings__steps-text">Install</p>
+        </div>
+
+        <div class="settings__steps-step active">
+          <div class="settings__steps-border"></div>
+          <p class="settings__steps-text">Setting</p>
+        </div>
+
+        <div class="settings__steps-step active">
+          <div class="settings__steps-border"></div>
+          <p class="settings__steps-text">Scan</p>
+        </div>
+
+        <div class="settings__steps-step active">
+          <div class="settings__steps-border"></div>
+          <p class="settings__steps-text">Enter Code</p>
+        </div>
+      </div>
+
+      <div class="settings__steps-label">Enter the code from <br /> Google Authenticator</div>
+
+      <div class="settings__inputs">
+        <p class="settings__inputs-label">Code</p>
+
+        <ul class="settings__inputs-list">
+          <li class="settings__inputs-item">
+            <input class="settings__inputs-input" type="text" maxlength="1">
+          </li>
+
+          <li class="settings__inputs-item">
+            <input class="settings__inputs-input" type="text" maxlength="1">
+          </li>
+
+          <li class="settings__inputs-item">
+            <input class="settings__inputs-input" type="text" maxlength="1">
+          </li>
+
+          <li class="settings__inputs-item">
+            <input class="settings__inputs-input" type="text" maxlength="1">
+          </li>
+
+          <li class="settings__inputs-item">
+            <input class="settings__inputs-input" type="text" maxlength="1">
+          </li>
+
+          <li class="settings__inputs-item">
+            <input class="settings__inputs-input" type="text" maxlength="1">
+          </li>
+        </ul>
+      </div>
+
+      <button type="button" class="settings__steps-btn btn">NEXT STEP</button>
+    </form>
+  </div>
+</section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__copy">@ 2024. All rights reserved</p>
+
+    <nav class="footer__nav">
+      <ul class="footer__list">
+        <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Terms</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Blog</a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 
