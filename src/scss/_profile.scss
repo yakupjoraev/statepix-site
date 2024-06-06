@@ -54,6 +54,7 @@
   // .profile__avatar
 
   &__avatar {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -259,5 +260,17 @@
       background-color: #e488cc;
       height: 100%;
     }
+  }
+
+  // .profile__avatar-change
+  &__avatar-change {
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+    background: var(--white);
   }
 }
