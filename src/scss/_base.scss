@@ -55,3 +55,30 @@
   text-align: center;
   color: var(--white);
 }
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+  padding: 12px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid #a0aec0;
+
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: center;
+  color: #a0aec0;
+}
+
+.btn-sup {
+  column-gap: 0;
+
+  sup {
+    margin-top: -4px;
+    font-size: 10px;
+  }
+}

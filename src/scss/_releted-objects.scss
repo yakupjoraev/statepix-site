@@ -1,0 +1,33 @@
+.releted-objects {
+  margin-bottom: 24px;
+  padding: 28px 20px 32px;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.02);
+  background: var(--white);
+
+  @media (max-width: $breakpoint768) {
+    padding: 24px 16px;
+  }
+
+  // .releted-objects__inner
+
+  &__inner {}
+
+  // .releted-objects__title
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #2d3748;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .releted-objects__list
+
+  &__list {}
+}

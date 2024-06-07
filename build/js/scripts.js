@@ -53,4 +53,68 @@ function fixedNav() {
 }
 window.addEventListener('scroll', fixedNav)
 
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector('.object__tabs');
 
+  if (!container) {
+    return null
+  }
+
+  const tabButtons = document.querySelectorAll(".object__tabs-btn");
+  const tabContents = document.querySelectorAll(".object__tabs-content");
+
+  tabButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const tabName = button.getAttribute("data-tab-btn");
+
+      // Remove active class from all buttons and contents
+      tabButtons.forEach(btn => btn.classList.remove("active"));
+      tabContents.forEach(content => content.classList.remove("active"));
+
+      // Add active class to the clicked button and corresponding content
+      button.classList.add("active");
+      document.querySelector(`.object__tabs-content[data-tab-content="${tabName}"]`).classList.add("active");
+    });
+  });
+});
+
+
+function objectGallerySlider() {
+  const container = document.querySelector('.object__gallery');
+
+  if (!container) {
+    return null
+  }
+
+  const swiper = new Swiper(".object__slider-thumbs", {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: "auto",
+    freeMode: true,
+    watchSlidesProgress: true,
+
+    // Responsive breakpoints
+    breakpoints: {
+
+      // when window width is >= 767
+      767: {
+        direction: 'vertical',
+      }
+    }
+  });
+
+  const swiper2 = new Swiper(".object__slider", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+}
+
+objectGallerySlider();
