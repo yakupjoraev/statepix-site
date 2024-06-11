@@ -117,3 +117,8 @@ function objectGallerySlider() {
 }
 
 objectGallerySlider();
+
+
+customSelect('select');
+
+new AirDatepicker('#datepicker');

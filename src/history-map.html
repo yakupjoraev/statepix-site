@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/custom-select.css">
+  <link rel="stylesheet" href="./css/air-datepicker.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+  <div class="wrapper">
+    <!-- Header -->
+    @@include('./html/_header.html')
+
+    <div class="inner">
+      @@include('./html/_aside.html')
+
+      <!-- Content -->
+      <div class="content">
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Pages</a></li>
+            <li class="breadcrumbs__item">Transactions History</li>
+          </ul>
+        </div>
+
+        <!-- Title -->
+        <h1 class="title">Transactions History</h1>
+
+        <!-- Sections -->
+        @@include('./html/_history-map.html')
+
+
+        <!-- Footer -->
+        @@include('./html/_footer.html')
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="./js/custom-select.min.js"></script>
+<script src="./js/air-datepicker.js"></script>
+<script src="./js/scripts.min.js"></script>
+
+</html>

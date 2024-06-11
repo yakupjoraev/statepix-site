@@ -1,0 +1,441 @@
+<section class="orders">
+  <div class="orders__inner">
+    <div class="orders__head">
+      <h2 class="orders__title">My Orders</h2>
+    </div>
+
+    <div class="orders__content">
+      <div class="orders__filters">
+        <select id="mySelect1">
+          <option value>Select...</option>
+          <option value="Limit">Limit</option>
+          <option value="Limit 2">Limit 2</option>
+        </select>
+
+        <select id="mySelect2">
+          <option value>Select...</option>
+          <option value="Purchase">Purchase</option>
+          <option value="Purchase 2">Purchase 2</option>
+        </select>
+
+        <select id="mySelect3">
+          <option value>Select...</option>
+          <option value="Full object">Full object</option>
+          <option value="Full object 2">Full object 2</option>
+        </select>
+
+        <div class="datepicker">
+          <input type="text" class="js-datepicker datepicker__input" id="datepicker" placeholder="Date"
+            data-language="en" data-min-view="months" data-view="months" data-date-format="MM yyyy" />
+          <img width="20" height="20" src="./img/icons/datepicker.svg" alt="">
+        </div>
+      </div>
+
+      <div class="orders__table">
+        <div class="table__container">
+          <table class="table">
+            <!-- <tr>
+              <th>Location</th>
+              <th>Size</th>
+              <th>Rooms</th>
+              <th>Bathrooms</th>
+              <th>Date and Time</th>
+              <th>Type</th>
+              <th>Condition</th>
+              <th>Price</th>
+              <th>Description</th>
+            </tr> -->
+            <tr>
+              <td>
+                <div class="table__info">
+                  <img width="60" height="80" src="./img/table-card.png" alt="card">
+
+                  <div class="table__info-texts">
+                    <p class="table__info-address">Dubai, 1 Sheikh Mohammed</p>
+                    <p class="table__info-name">Office in Burj Khalifa</p>
+                  </div>
+                </div>
+
+              </td>
+              <td>
+                <div class="card__advantages">
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-1.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">54m<sup>2</sup></p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-2.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">4</p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-3.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">2</p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <div class="table__dates">
+                  <p class="table__date">27.05.24, </p>
+                  <p class="table__date">12:30</p>
+                </div>
+              </td>
+              <td>Purchase</td>
+              <td>Limit</td>
+              <td>3,000,000.00 USDT</td>
+              <td>
+                <div class="table__actions">
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/create.svg" alt="iocn">
+                  </button>
+
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/trash.svg" alt="iocn">
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table__info">
+                  <img width="60" height="80" src="./img/table-card.png" alt="card">
+
+                  <div class="table__info-texts">
+                    <p class="table__info-address">Dubai, 1 Sheikh Mohammed</p>
+                    <p class="table__info-name">Office in Burj Khalifa</p>
+                  </div>
+                </div>
+
+              </td>
+              <td>
+                <div class="card__advantages">
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-1.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">54m<sup>2</sup></p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-2.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">4</p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-3.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">2</p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <div class="table__dates">
+                  <p class="table__date">27.05.24, </p>
+                  <p class="table__date">12:30</p>
+                </div>
+              </td>
+              <td>Purchase</td>
+              <td>Limit</td>
+              <td>3,000,000.00 USDT</td>
+              <td>
+                <div class="table__actions">
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/create.svg" alt="iocn">
+                  </button>
+
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/trash.svg" alt="iocn">
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="table__info">
+                  <img width="60" height="80" src="./img/table-card.png" alt="card">
+
+                  <div class="table__info-texts">
+                    <p class="table__info-address">Dubai, 1 Sheikh Mohammed</p>
+                    <p class="table__info-name">Office in Burj Khalifa</p>
+                  </div>
+                </div>
+
+              </td>
+              <td>
+                <div class="card__advantages">
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-1.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">54m<sup>2</sup></p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-2.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">4</p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-3.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">2</p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <div class="table__dates">
+                  <p class="table__date">27.05.24, </p>
+                  <p class="table__date">12:30</p>
+                </div>
+              </td>
+              <td>Purchase</td>
+              <td>Limit</td>
+              <td>3,000,000.00 USDT</td>
+              <td>
+                <div class="table__actions">
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/create.svg" alt="iocn">
+                  </button>
+
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/trash.svg" alt="iocn">
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="table__info">
+                  <img width="60" height="80" src="./img/table-card.png" alt="card">
+
+                  <div class="table__info-texts">
+                    <p class="table__info-address">Dubai, 1 Sheikh Mohammed</p>
+                    <p class="table__info-name">Office in Burj Khalifa</p>
+                  </div>
+                </div>
+
+              </td>
+              <td>
+                <div class="card__advantages">
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-1.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">54m<sup>2</sup></p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-2.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">4</p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-3.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">2</p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <div class="table__dates">
+                  <p class="table__date">27.05.24, </p>
+                  <p class="table__date">12:30</p>
+                </div>
+              </td>
+              <td>Purchase</td>
+              <td>Limit</td>
+              <td>3,000,000.00 USDT</td>
+              <td>
+                <div class="table__actions">
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/create.svg" alt="iocn">
+                  </button>
+
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/trash.svg" alt="iocn">
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="table__info">
+                  <img width="60" height="80" src="./img/table-card.png" alt="card">
+
+                  <div class="table__info-texts">
+                    <p class="table__info-address">Dubai, 1 Sheikh Mohammed</p>
+                    <p class="table__info-name">Office in Burj Khalifa</p>
+                  </div>
+                </div>
+
+              </td>
+              <td>
+                <div class="card__advantages">
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-1.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">54m<sup>2</sup></p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-2.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">4</p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-3.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">2</p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <div class="table__dates">
+                  <p class="table__date">27.05.24, </p>
+                  <p class="table__date">12:30</p>
+                </div>
+              </td>
+              <td>Purchase</td>
+              <td>Limit</td>
+              <td>3,000,000.00 USDT</td>
+              <td>
+                <div class="table__actions">
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/create.svg" alt="iocn">
+                  </button>
+
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/trash.svg" alt="iocn">
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="table__info">
+                  <img width="60" height="80" src="./img/table-card.png" alt="card">
+
+                  <div class="table__info-texts">
+                    <p class="table__info-address">Dubai, 1 Sheikh Mohammed</p>
+                    <p class="table__info-name">Office in Burj Khalifa</p>
+                  </div>
+                </div>
+
+              </td>
+              <td>
+                <div class="card__advantages">
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-1.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">54m<sup>2</sup></p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-2.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">4</p>
+                    </div>
+                  </div>
+
+                  <div class="card__advantage">
+                    <img class="card__advantage-icon" width="24" height="24" src="./img/icons/card-advantage-3.svg"
+                      alt="icon">
+
+                    <div class="card__advantage-texts">
+                      <p class="card__advantage-text">2</p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <div class="table__dates">
+                  <p class="table__date">27.05.24, </p>
+                  <p class="table__date">12:30</p>
+                </div>
+              </td>
+              <td>Purchase</td>
+              <td>Limit</td>
+              <td>3,000,000.00 USDT</td>
+              <td>
+                <div class="table__actions">
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/create.svg" alt="iocn">
+                  </button>
+
+                  <button type="button" class="table__btn">
+                    <img width="20" height="20" src="./img/icons/trash.svg" alt="iocn">
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
