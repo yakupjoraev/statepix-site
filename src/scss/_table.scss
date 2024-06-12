@@ -7,6 +7,21 @@
 
   &__container {
     overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      height: 6px;
+      border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #e6ebf2;
+      border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 50px;
+      background: #e488cc;
+    }
   }
 
   tr {

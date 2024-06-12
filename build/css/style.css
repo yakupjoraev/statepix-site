@@ -553,6 +553,21 @@ body.locked {
   overflow-x: auto;
 }
 
+.table__container::-webkit-scrollbar {
+  height: 6px;
+  border-radius: 50px;
+}
+
+.table__container::-webkit-scrollbar-track {
+  background: #e6ebf2;
+  border-radius: 50px;
+}
+
+.table__container::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #e488cc;
+}
+
 .table tr {
   border-bottom: 1px solid #f5f5f5;
 }
@@ -2593,6 +2608,214 @@ body.locked {
   border-radius: 15px;
 }
 
+.wallet__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+}
+
+.wallet__top {
+  display: grid;
+  grid-template-columns: 506px 1fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  row-gap: 24px;
+}
+
+.wallet__balance {
+  height: 428px;
+  padding: 24px 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.02);
+  background: var(--white);
+}
+
+.wallet__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.wallet__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #2d3748;
+}
+
+.wallet__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  padding: 30px;
+  width: 100%;
+  height: 240px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background: -o-linear-gradient(49deg, #219f70 0%, #8055bb 100%);
+  background: linear-gradient(41deg, #219f70 0%, #8055bb 100%);
+}
+
+.wallet__card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4px;
+}
+
+.wallet__card-label {
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--white);
+}
+
+.wallet__card-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--white);
+}
+
+.wallet__card-count img {
+  -webkit-filter: brightness(0) saturate(100%) invert(92%) sepia(93%) saturate(0%) hue-rotate(202deg) brightness(106%) contrast(106%);
+          filter: brightness(0) saturate(100%) invert(92%) sepia(93%) saturate(0%) hue-rotate(202deg) brightness(106%) contrast(106%);
+}
+
+.wallet__actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+
+.wallet__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  border-radius: 12px;
+  width: 100%;
+  height: 74px;
+  background-color: #f4f6ff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #2d3748;
+}
+
+.wallet__action-icon {
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.wallet__assets {
+  height: 428px;
+  padding: 24px 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.02);
+  background: var(--white);
+}
+
+.wallet__assets-table {
+  height: 340px;
+  overflow: hidden;
+}
+
+.wallet__assets-table .table__container {
+  height: 340px;
+  overflow-y: auto;
+}
+
+.wallet__assets-table .table__container::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 50px;
+}
+
+.wallet__assets-table .table__container::-webkit-scrollbar-track {
+  background: #e6ebf2;
+  border-radius: 50px;
+}
+
+.wallet__assets-table .table__container::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #e488cc;
+}
+
+.wallet__assets-table .table {
+  min-width: 1px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.wallet__assets-table .table__info {
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.wallet__assets-table .table__info-name {
+  font-size: 14px;
+}
+
+.wallet__assets-table .table__info-address {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .favorites {
   margin-bottom: 24px;
   padding: 28px 20px 32px;
@@ -3275,6 +3498,10 @@ body.locked {
     height: 340px;
   }
 
+  .wallet__top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .history-map__columns {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 24px;
@@ -3718,6 +3945,36 @@ body.locked {
     padding: 16px;
   }
 
+  .wallet__balance {
+    padding: 20px 12px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .wallet__card {
+    padding: 20px 16px;
+  }
+
+  .wallet__card-count {
+    font-size: 20px;
+  }
+
+  .wallet__actions {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .wallet__assets {
+    padding: 20px 12px;
+  }
+
+  .wallet__assets-table .table td,
+  .wallet__assets-table .table th,
+  .wallet__assets-table .table__info-name,
+  .wallet__assets-table .table__info-address {
+    font-size: 12px;
+  }
+
   .favorites {
     padding: 20px 16px;
   }
@@ -3874,6 +4131,12 @@ body.locked {
   .objects__graphik-selected:hover {
     border-color: var(--grey);
     color: var(--grey);
+  }
+
+  .wallet__action:hover .wallet__action-icon {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
   .datepicker__input:hover {

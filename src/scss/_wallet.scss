@@ -1,0 +1,241 @@
+.wallet {
+
+  // .wallet__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  // .wallet__top
+
+  &__top {
+    display: grid;
+    grid-template-columns: 506px 1fr;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    @media (max-width: $breakpoint1450) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  }
+
+  // .wallet__balance
+
+  &__balance {
+    height: 428px;
+    padding: 24px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.02);
+    background: var(--white);
+
+    @media (max-width: $breakpoint768) {
+      padding: 20px 12px;
+      height: fit-content;
+    }
+  }
+
+  // .wallet__head
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  // .wallet__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #2d3748;
+  }
+
+  // .wallet__card
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 30px;
+    width: 100%;
+    height: 240px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: linear-gradient(41deg, #219f70 0%, #8055bb 100%);
+
+    @media (max-width: $breakpoint768) {
+      padding: 20px 16px;
+    }
+  }
+
+  // .wallet__card-logo
+
+  &__card-logo {}
+
+  // .wallet__card-footer
+
+  &__card-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  // .wallet__card-label
+
+  &__card-label {
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--white);
+  }
+
+  // .wallet__card-count
+
+  &__card-count {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: var(--white);
+
+    img {
+      filter: brightness(0) saturate(100%) invert(92%) sepia(93%) saturate(0%) hue-rotate(202deg) brightness(106%) contrast(106%);
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .wallet__actions
+
+  &__actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .wallet__action
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    border-radius: 12px;
+    width: 100%;
+    height: 74px;
+    background-color: #f4f6ff;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #2d3748;
+
+    @media (hover:hover) {
+      &:hover {
+        .wallet__action-icon {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  // .wallet__action-icon
+
+  &__action-icon {
+    transition: 0.2s linear;
+  }
+
+  // .wallet__assets
+
+  &__assets {
+    height: 428px;
+    padding: 24px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.02);
+    background: var(--white);
+
+    @media (max-width: $breakpoint768) {
+      padding: 20px 12px;
+    }
+  }
+
+  // .wallet__assets-table
+
+  &__assets-table {
+    height: 340px;
+    overflow: hidden;
+
+    .table__container {
+      height: 340px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        border-radius: 50px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #e6ebf2;
+        border-radius: 50px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background: #e488cc;
+      }
+    }
+
+    .table {
+      min-width: 1px;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .table__info {
+      column-gap: 10px;
+    }
+
+    .table__info-name {
+      font-size: 14px;
+    }
+
+    .table__info-address {
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+
+    @media (max-width: $breakpoint768) {
+
+      .table td,
+      .table th,
+      .table__info-name,
+      .table__info-address {
+        font-size: 12px;
+      }
+    }
+  }
+
+  // .wallet__bottom
+
+  &__bottom {}
+}
