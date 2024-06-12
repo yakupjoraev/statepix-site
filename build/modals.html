@@ -123,15 +123,96 @@
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Pages</a></li>
-            <li class="breadcrumbs__item">Transactions History</li>
+            <li class="breadcrumbs__item">Modals</li>
           </ul>
         </div>
 
         <!-- Title -->
-        <h1 class="title">Transactions History</h1>
+        <h1 class="title">Modals</h1>
 
         <!-- Sections -->
-        
+        <div class="modals">
+  <div class="modals__btns">
+    <!-- Для вызова модалки используй класс open-modal-btn и id модалки data-modal-id="ТУТ" -->
+
+    <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_withdraw</div>
+    <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_withdraw2</div>
+    <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_deposit</div>
+    <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_deposit2</div>
+    <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_swap</div>
+    <div class="modals__btn open-modal-btn" data-modal-id="wallet-swap-2">Wallet_swap2</div>
+
+  </div>
+
+  <div class="modals__contents">
+    <div class="modals__content">
+
+
+      <!-- Тут сами модалки с id" -->
+
+      <div class="modal" id="wallet-swap-2">
+        <div class="modal-content">
+          <form class="modal__form" action="#">
+            <div class="modal__head">
+              <div class="modal__logo">
+                <img width="100" height="21" src="./img/card-logo-black.svg" alt="logo">
+              </div>
+
+              <h2 class="modal__title">Swap Transaction</h2>
+
+              <button class="close-modal-btn"><img src="./img/icons/close-modal.svg" alt="close"></button>
+            </div>
+
+            <div class="modal__main">
+              <div class="transaction">
+                <div class="transaction__blocks">
+                  <div class="transaction__block transaction__block-fiol">
+                    <p class="transaction__token">-0.5 BTC</p>
+                    <p class="transaction__sum">$ 33 551</p>
+                  </div>
+                  <div class="transaction__block transaction__block-green">
+                    <p class="transaction__token">+9,63 ETH</p>
+                    <p class="transaction__sum">$ 33 607</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="transaction__rows">
+                <div class="transaction__row">
+                  <p class="transaction__row-text">Exchange rate: </p>
+                  <p class="transaction__row-text">1,00 Bitcoin = 19,21 Ethereum</p>
+                </div>
+
+                <div class="transaction__row">
+                  <p class="transaction__row-text">Sender adress (btc):</p>
+                  <p class="transaction__row-text">0x029njg847n874n48902900</p>
+                </div>
+
+                <div class="transaction__row">
+                  <p class="transaction__row-text">Recipient adress: </p>
+                  <p class="transaction__row-text">0x029njg847n874n48902900</p>
+                </div>
+
+                <div class="transaction__row">
+                  <p class="transaction__row-text">Network fee: </p>
+                  <p class="transaction__row-text">0 (offchain)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal__footer">
+              <button type="submit" class="modal__btn btn">CONFIRM SWAP</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
 
 
         <!-- Footer -->
