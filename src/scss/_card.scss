@@ -10,6 +10,7 @@
 }
 
 .card {
+  position: relative;
   display: grid;
   row-gap: 20px;
 
@@ -60,6 +61,7 @@
     top: 16px;
     right: 16px;
     padding: 6px;
+    min-width: 80px;
     min-height: 24px;
     border-radius: 2px;
     background-color: var(--green);
@@ -86,6 +88,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+    padding-right: 100px;
   }
 
   // .card__info
@@ -148,6 +151,37 @@
   &__advantage-text {
     font-size: 12px;
     line-height: 120%;
+    color: #2d3748;
+  }
+
+  &__favorite {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+  }
+
+  &__favorite-pic {}
+
+  // .card__percent
+  &__percent {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 4px solid #E488CC;
+
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 120%;
+    text-align: center;
     color: #2d3748;
   }
 }

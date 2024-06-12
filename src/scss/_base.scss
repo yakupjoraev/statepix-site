@@ -16,6 +16,34 @@
   }
 }
 
+.fullscreen {
+  flex-grow: 1;
+
+  display: grid;
+  grid-template-columns: 248px 1fr;
+  padding: 24px 24px 46px;
+
+  .footer {
+    grid-column: span 2;
+  }
+
+  @media (max-width: $breakpoint992) {
+    grid-template-columns: 1fr;
+
+    padding: 0;
+
+    .footer {}
+
+    .footer {
+      padding: 20px 16px 120px 16px;
+      grid-column: span 1;
+    }
+  }
+
+  @media (max-width: $breakpoint768) {}
+
+}
+
 .content {
   display: flex;
   flex-direction: column;
