@@ -147,6 +147,91 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+function filterRange() {
+  const filters = document.querySelector('.filters');
+
+  if (!filters) {
+    return null;
+  }
+
+  let ranges = document.querySelectorAll('.filters__block');
+
+  ranges.forEach(block => {
+    const rangeInputs = block.querySelectorAll(".range-input input[type='range']");
+    const priceInputs = block.querySelectorAll(".price-input input[type='number']");
+    const rangeProgress = block.querySelector(".slider .progress");
+    const sumMinDisplay = block.querySelector(".range-input__sum-min");
+    const sumMaxDisplay = block.querySelector(".range-input__sum-max");
+    let priceGap = 1000;
+
+    if (rangeInputs.length < 2 || priceInputs.length < 2 || !rangeProgress || !sumMinDisplay || !sumMaxDisplay) {
+      return;
+    }
+
+    const isPriceBlock = block.querySelector('.filters__block-label').textContent === 'Price';
+
+    // Update display values
+    const updateDisplay = () => {
+      if (isPriceBlock) {
+        sumMinDisplay.textContent = `$${priceInputs[0].value}`;
+        sumMaxDisplay.textContent = `$${priceInputs[1].value}`;
+      } else {
+        sumMinDisplay.textContent = `${priceInputs[0].value} m²`;
+        sumMaxDisplay.textContent = `${priceInputs[1].value} m²`;
+      }
+    };
+
+    // Event listener for price inputs
+    priceInputs.forEach(input => {
+      input.addEventListener("input", e => {
+        let minPrice = parseInt(priceInputs[0].value);
+        let maxPrice = parseInt(priceInputs[1].value);
+
+        if ((maxPrice - minPrice >= priceGap) && maxPrice <= parseInt(rangeInputs[1].max)) {
+          if (e.target.classList.contains("input-min")) {
+            rangeInputs[0].value = minPrice;
+            rangeProgress.style.left = ((minPrice / parseInt(rangeInputs[0].max)) * 100) + "%";
+          } else {
+            rangeInputs[1].value = maxPrice;
+            rangeProgress.style.right = 100 - (maxPrice / parseInt(rangeInputs[1].max)) * 100 + "%";
+          }
+          updateDisplay();
+        }
+      });
+    });
+
+    // Event listener for range inputs
+    rangeInputs.forEach(input => {
+      input.addEventListener("input", e => {
+        let minVal = parseInt(rangeInputs[0].value);
+        let maxVal = parseInt(rangeInputs[1].value);
+
+        if ((maxVal - minVal) < priceGap) {
+          if (e.target.classList.contains("range-min")) {
+            rangeInputs[0].value = maxVal - priceGap;
+          } else {
+            rangeInputs[1].value = minVal + priceGap;
+          }
+        } else {
+          priceInputs[0].value = minVal;
+          priceInputs[1].value = maxVal;
+          rangeProgress.style.left = ((minVal / parseInt(rangeInputs[0].max)) * 100) + "%";
+          rangeProgress.style.right = 100 - (maxVal / parseInt(rangeInputs[1].max)) * 100 + "%";
+          updateDisplay();
+        }
+      });
+    });
+
+    // Initialize display values
+    updateDisplay();
+  });
+}
+
+filterRange();
+
+
+
+
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
 const closeModalBtns = document.querySelectorAll('.close-modal-btn');
 const modals = document.querySelectorAll('.modal');

@@ -2,6 +2,8 @@
   <div class="modals__btns">
     <!-- Для вызова модалки используй класс open-modal-btn и id модалки data-modal-id="ТУТ" -->
 
+    <div class="modals__btn open-modal-btn" data-modal-id="filters-modal">Filters</div>
+
     <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_withdraw</div>
     <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_withdraw2</div>
     <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_deposit</div>
@@ -16,6 +18,153 @@
 
 
       <!-- Тут сами модалки с id" -->
+
+      <div class="modal" id="filters-modal">
+        <div class="modal-content modal-content--large">
+          <form class="modal__form" action="#">
+            <div class="modal__head">
+
+              <h2 class="modal__title modal__title--left">Filters</h2>
+
+              <button class="close-modal-btn"><img src="./img/icons/close-modal.svg" alt="close"></button>
+            </div>
+
+            <div class="modal__main">
+              <div class="filters-modal">
+                <ul class="filters-modal__list">
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Layout</p>
+
+                    <div class="filters-modal__inputs">
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="layout-1">
+                        <label class="filters-modal__checkbox-label" for="layout-1">No matter</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="layout-2" checked>
+                        <label class="filters-modal__checkbox-label" for="layout-2">Adjacent</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="layout-3">
+                        <label class="filters-modal__checkbox-label" for="layout-3">Isolated</label>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Ceiling height</p>
+
+                    <div class="filters-modal__inputs">
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="height-1">
+                        <label class="filters-modal__checkbox-label" for="height-1">No matter</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="height-2" checked>
+                        <label class="filters-modal__checkbox-label" for="height-2">2.5 m<sup>2</sup></label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="height-3">
+                        <label class="filters-modal__checkbox-label" for="height-3">2.7 m<sup>2</sup></label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="height-4">
+                        <label class="filters-modal__checkbox-label" for="height-4">3.0 m<sup>2</sup></label>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Repair</p>
+
+                    <div class="filters-modal__inputs">
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="repair-1">
+                        <label class="filters-modal__checkbox-label" for="repair-1">No matter</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="repair-2">
+                        <label class="filters-modal__checkbox-label" for="repair-2">No renovation</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="repair-3">
+                        <label class="filters-modal__checkbox-label" for="repair-3">Cosmetic</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="repair-4" checked>
+                        <label class="filters-modal__checkbox-label" for="repair-4"></label>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">View</p>
+
+                    <div class="filters-modal__inputs">
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="view-1">
+                        <label class="filters-modal__checkbox-label" for="view-1">No matter</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="view-2" checked>
+                        <label class="filters-modal__checkbox-label" for="view-2">Into the yard</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="view-3">
+                        <label class="filters-modal__checkbox-label" for="view-3">Outside</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="view-4">
+                        <label class="filters-modal__checkbox-label" for="view-4">Outside the ocean</label>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Layout</p>
+
+                    <div class="filters-modal__inputs">
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="layout-1">
+                        <label class="filters-modal__checkbox-label" for="layout-1">No matter</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="layout-2" checked>
+                        <label class="filters-modal__checkbox-label" for="layout-2">Adjacent</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="layout-3">
+                        <label class="filters-modal__checkbox-label" for="layout-3">Isolated</label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="modal__footer modal__footer--end">
+              <button type="reset" class="modal__btn btn-outline">reset filters</button>
+              <button type="submit" class="modal__btn btn">SHOW OBJECTS</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+
 
       <div class="modal" id="wallet-swap-2">
         <div class="modal-content">
@@ -74,6 +223,7 @@
 
         </div>
       </div>
+
 
 
     </div>

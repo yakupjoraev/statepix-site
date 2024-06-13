@@ -1,1 +1,183 @@
-<div class="filters">df</div>
+<form action="#" class="filters">
+  <div class="filters__inner">
+    <div class="filters__block">
+      <p class="filters__block-label">Object Type </p>
+
+      <ul class="filters__list">
+        <li class="filters__item">
+          <div class="filters__checkbox">
+            <input class="filters__checkbox-input" type="checkbox" id="checkbox-1">
+
+            <label class="filters__checkbox-label" for="checkbox-1">
+              <div class="filters__checkbox-decor"></div>
+
+              <p class="filters__checkbox-text">Flat</p>
+            </label>
+          </div>
+        </li>
+
+        <li class="filters__item">
+          <div class="filters__checkbox">
+            <input class="filters__checkbox-input" type="checkbox" id="checkbox-2">
+
+            <label class="filters__checkbox-label" for="checkbox-2">
+              <div class="filters__checkbox-decor"></div>
+
+              <p class="filters__checkbox-text">Office</p>
+            </label>
+          </div>
+        </li>
+
+        <li class="filters__item">
+          <div class="filters__checkbox">
+            <input class="filters__checkbox-input" type="checkbox" id="checkbox-3">
+
+            <label class="filters__checkbox-label" for="checkbox-3">
+              <div class="filters__checkbox-decor"></div>
+
+              <p class="filters__checkbox-text">House</p>
+            </label>
+          </div>
+        </li>
+
+        <li class="filters__item">
+          <div class="filters__checkbox">
+            <input class="filters__checkbox-input" type="checkbox" id="checkbox-4">
+
+            <label class="filters__checkbox-label" for="checkbox-4">
+              <div class="filters__checkbox-decor"></div>
+
+              <p class="filters__checkbox-text">Townhouse</p>
+            </label>
+          </div>
+        </li>
+
+        <li class="filters__item">
+          <div class="filters__checkbox">
+            <input class="filters__checkbox-input" type="checkbox" id="checkbox-5">
+
+            <label class="filters__checkbox-label" for="checkbox-5">
+              <div class="filters__checkbox-decor"></div>
+
+              <p class="filters__checkbox-text">Commercial</p>
+            </label>
+          </div>
+        </li>
+
+        <li class="filters__item">
+          <div class="filters__checkbox">
+            <input class="filters__checkbox-input" type="checkbox" id="checkbox-6">
+
+            <label class="filters__checkbox-label" for="checkbox-6">
+              <div class="filters__checkbox-decor"></div>
+
+              <p class="filters__checkbox-text">Building</p>
+            </label>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="filters__block">
+      <p class="filters__block-label">Status</p>
+
+      <div class="filters__select">
+        <select id="status">
+          <option value>Select...</option>
+          <option value="One">One</option>
+          <option value="Two">Two</option>
+          <option value="All">All</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="filters__block">
+      <p class="filters__block-label">Rooms</p>
+
+      <div class="filters__select">
+        <select id="rooms">
+          <option value>Select...</option>
+          <option value="One">One</option>
+          <option value="Two">Two</option>
+          <option value="All">All</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="filters__block">
+      <p class="filters__block-label">Price</p>
+
+      <div class="price-input">
+        <div class="field">
+          <input type="number" class="input-min" value="2500">
+        </div>
+        <div class="field">
+          <input type="number" class="input-max" value="7500">
+        </div>
+      </div>
+      <div class="slider">
+        <div class="progress"></div>
+      </div>
+      <div class="range-input">
+        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+
+        <div class="range-input__sums">
+          <div class="range-input__sum-min"></div>
+          <div class="range-input__sum-max"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="filters__block">
+      <p class="filters__block-label">Object Area</p>
+
+      <div class="price-input">
+        <div class="field">
+          <input type="number" class="input-min" value="24">
+        </div>
+        <div class="field">
+          <input type="number" class="input-max" value="70">
+        </div>
+      </div>
+      <div class="slider">
+        <div class="progress"></div>
+      </div>
+      <div class="range-input">
+        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+
+        <div class="range-input__sums">
+          <div class="range-input__sum-min"></div>
+          <div class="range-input__sum-max"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filters__block">
+      <p class="filters__block-label">Floor Number</p>
+
+      <div class="filters__select">
+        <select id="floor">
+          <option value>Select...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="submit" class="filters__btn">MORE FILTERS</button>
+  </div>
+</form>
