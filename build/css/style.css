@@ -3463,7 +3463,7 @@ body.locked {
   font-weight: 400;
   font-size: 12px;
   line-height: 120%;
-  color: #a0aec0;
+  color: #2d3748;
 }
 
 .custom-select-panel {
@@ -4558,6 +4558,7 @@ input[type=range]::-moz-range-thumb {
 
 .modal__title--left {
   text-align: left;
+  margin-right: auto;
 }
 
 .modal__footer--end {
@@ -4673,6 +4674,135 @@ input[type=range]::-moz-range-thumb {
 .transaction__row-text {
   font-size: 12px;
   line-height: 100%;
+  color: #2d3748;
+}
+
+.filters-modal {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.filters-modal__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+}
+
+.filters-modal__item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 34px;
+     -moz-column-gap: 34px;
+          column-gap: 34px;
+}
+
+.filters-modal__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: right;
+  color: #2d3748;
+}
+
+.filters-modal__rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.filters-modal__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.filters-modal__row-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: center;
+  color: #2d3748;
+}
+
+.filters-modal__input {
+  width: 60px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 3px;
+  outline: 0;
+  background-color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: center;
+  color: #2d3748;
+}
+
+.filters-modal__inputs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+}
+
+.filters-modal__checkbox-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -100;
+}
+
+.filters-modal__checkbox-input:checked ~ .filters-modal__checkbox-label {
+  border: 1px solid var(--violent);
+  background-color: #fae4ff;
+}
+
+.filters-modal__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 3px;
+  width: 100%;
+  height: 32px;
+  background-color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: center;
   color: #2d3748;
 }
 
@@ -5472,12 +5602,53 @@ input[type=range]::-moz-range-thumb {
     font-size: 20px;
   }
 
+  .modal__footer--end {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .modal__footer--end .modal__btn {
+    max-width: 100%;
+  }
+
   .transaction__token {
     font-size: 20px;
   }
 
   .transaction__rows {
     padding: 12px;
+  }
+
+  .filters-modal {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .filters-modal__item {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 12px;
+  }
+
+  .filters-modal__text {
+    text-align: left;
+  }
+
+  .filters-modal__rows {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .filters-modal__row-text {
+    min-width: 60px;
+    text-align: left;
+  }
+
+  .filters-modal__checkbox-label {
+    font-size: 10px;
   }
 
   .footer__inner {

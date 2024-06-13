@@ -267,6 +267,41 @@
               <div class="filters-modal">
                 <ul class="filters-modal__list">
                   <li class="filters-modal__item">
+                    <p class="filters-modal__text">Area, m2</p>
+
+                    <div class="filters-modal__rows">
+                      <div class="filters-modal__row">
+                        <p class="filters-modal__row-text">Total</p>
+                        <input class="filters-modal__input" type="number" value="10">
+                        <input class="filters-modal__input" type="number" value="100">
+                      </div>
+
+                      <div class="filters-modal__row">
+                        <p class="filters-modal__row-text">Kitchen</p>
+                        <input class="filters-modal__input" type="number" value="10">
+                        <input class="filters-modal__input" type="number" value="100">
+                      </div>
+
+                      <div class="filters-modal__row">
+                        <p class="filters-modal__row-text">Living</p>
+                        <input class="filters-modal__input" type="number" value="10">
+                        <input class="filters-modal__input" type="number" value="100">
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Floor </p>
+
+                    <div class="filters-modal__rows">
+                      <div class="filters-modal__row">
+                        <input class="filters-modal__input" type="number" value="1">
+                        <input class="filters-modal__input" type="number" value="84">
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="filters-modal__item">
                     <p class="filters-modal__text">Layout</p>
 
                     <div class="filters-modal__inputs">
@@ -334,7 +369,7 @@
 
                       <div class="filters-modal__checkbox">
                         <input class="filters-modal__checkbox-input" type="checkbox" id="repair-4" checked>
-                        <label class="filters-modal__checkbox-label" for="repair-4"></label>
+                        <label class="filters-modal__checkbox-label" for="repair-4">Designer</label>
                       </div>
                     </div>
                   </li>
@@ -365,23 +400,143 @@
                     </div>
                   </li>
 
+
                   <li class="filters-modal__item">
-                    <p class="filters-modal__text">Layout</p>
+                    <p class="filters-modal__text">Year of construction</p>
+
+                    <div class="filters-modal__rows">
+                      <div class="filters-modal__row">
+                        <input class="filters-modal__input" type="number" value="1992">
+                        <input class="filters-modal__input" type="number" value="2021">
+                      </div>
+                    </div>
+                  </li>
+
+
+
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Parking</p>
 
                     <div class="filters-modal__inputs">
                       <div class="filters-modal__checkbox">
-                        <input class="filters-modal__checkbox-input" type="checkbox" id="layout-1">
-                        <label class="filters-modal__checkbox-label" for="layout-1">No matter</label>
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="parking-1">
+                        <label class="filters-modal__checkbox-label" for="parking-1">No matter</label>
                       </div>
 
                       <div class="filters-modal__checkbox">
-                        <input class="filters-modal__checkbox-input" type="checkbox" id="layout-2" checked>
-                        <label class="filters-modal__checkbox-label" for="layout-2">Adjacent</label>
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="parking-2" checked>
+                        <label class="filters-modal__checkbox-label" for="parking-2">Yes</label>
                       </div>
 
                       <div class="filters-modal__checkbox">
-                        <input class="filters-modal__checkbox-input" type="checkbox" id="layout-3">
-                        <label class="filters-modal__checkbox-label" for="layout-3">Isolated</label>
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="parking-3">
+                        <label class="filters-modal__checkbox-label" for="parking-3">No</label>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Power supply</p>
+
+                    <div class="filters-modal__inputs">
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="supply-1">
+                        <label class="filters-modal__checkbox-label" for="supply-1">No matter</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="supply-2" checked>
+                        <label class="filters-modal__checkbox-label" for="supply-2">Yes</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="supply-3">
+                        <label class="filters-modal__checkbox-label" for="supply-3">No</label>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Air conditioning and climate control</p>
+
+                    <div class="filters-modal__inputs">
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="climate-1">
+                        <label class="filters-modal__checkbox-label" for="climate-1">No matter</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="climate-2" checked>
+                        <label class="filters-modal__checkbox-label" for="climate-2">Yes</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="climate-3">
+                        <label class="filters-modal__checkbox-label" for="climate-3">No</label>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Internet / Wi-Fi</p>
+
+                    <div class="filters-modal__inputs">
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="internet-1">
+                        <label class="filters-modal__checkbox-label" for="internet-1">No matter</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="internet-2" checked>
+                        <label class="filters-modal__checkbox-label" for="internet-2">Yes</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="internet-3">
+                        <label class="filters-modal__checkbox-label" for="internet-3">No</label>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Elevators</p>
+
+                    <div class="filters-modal__inputs">
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="elevators-1">
+                        <label class="filters-modal__checkbox-label" for="elevators-1">No matter</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="elevators-2" checked>
+                        <label class="filters-modal__checkbox-label" for="elevators-2">Yes</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="elevators-3">
+                        <label class="filters-modal__checkbox-label" for="elevators-3">No</label>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="filters-modal__item">
+                    <p class="filters-modal__text">Security</p>
+
+                    <div class="filters-modal__inputs">
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="security-1">
+                        <label class="filters-modal__checkbox-label" for="security-1">No matter</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="security-2" checked>
+                        <label class="filters-modal__checkbox-label" for="security-2">Yes</label>
+                      </div>
+
+                      <div class="filters-modal__checkbox">
+                        <input class="filters-modal__checkbox-input" type="checkbox" id="security-3">
+                        <label class="filters-modal__checkbox-label" for="security-3">No</label>
                       </div>
                     </div>
                   </li>
