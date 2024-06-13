@@ -8,6 +8,12 @@
     grid-template-columns: 1fr 460px;
     column-gap: 24px;
 
+    &--direction {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+    }
+
     @media (max-width: $breakpoint1450) {
       grid-template-columns: 1fr;
       row-gap: 24px;
@@ -68,6 +74,10 @@
     display: flex;
     align-items: flex-start;
     column-gap: 12px;
+
+    &--user {
+      align-items: center;
+    }
   }
 
   // .settings__info-icon
@@ -540,4 +550,16 @@
   // .settings__steps-btn
 
   &__steps-btn {}
+
+  // .settings__avatar
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    background-color: #e6ebf2;
+  }
 }

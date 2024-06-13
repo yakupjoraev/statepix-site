@@ -147,7 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
 const closeModalBtns = document.querySelectorAll('.close-modal-btn');
 const modals = document.querySelectorAll('.modal');
