@@ -123,41 +123,61 @@
 
         <div class="object__prising">
 
-          <div class="object__prising-columns">
-            <div class="object__prising-column">
-              <p class="object__prising-title">Price</p>
-              <p class="object__prising-label">Purchase Price</p>
-              <div class="object__prising-sum">$2,300,000.00</div>
-            </div>
 
-            <div class="object__prising-column">
-              <div class="object__prising-diagramm">
-                <img class="object__prising-diagramm-pic" src="./img/diagramm.svg" alt="diagramm">
+          <div class="object__blocks">
+            <div class="object__percent">
+              <div class="object__percent-progressbar" role="progressbar" aria-valuenow="42" aria-valuemin="0"
+                aria-valuemax="100" style="--value:42">
+              </div>
 
-                <div class="object__prising-diagramm-rows">
-                  <div class="object__prising-diagramm-row">
-                    <p class="object__prising-diagramm-text">Sale</p>
-                    <p class="object__prising-diagramm-text object__prising-diagramm-text--black">10 ft<sup>2</sup></p>
+              <div class="object__percent-rows">
+                <div class="object__percent-row">
+                  <div class="object__percent-name">
+                    <div class="object__percent-name-fiol"></div>
+                    <div class="object__percent-name-text">Can buy</div>
                   </div>
+                  <div class="object__percent-sums">54 m2 (42%)</div>
+                </div>
 
-                  <div class="object__prising-diagramm-row">
-                    <p class="object__prising-diagramm-text">Can buy</p>
-                    <p class="object__prising-diagramm-text object__prising-diagramm-text--black">44 ft<sup>2</sup></p>
+                <div class="object__percent-row">
+                  <div class="object__percent-name">
+                    <div class="object__percent-name-grey"></div>
+                    <div class="object__percent-name-text">Sold</div>
                   </div>
+                  <div class="object__percent-sums">75 m2 (58%)</div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="object__btns">
-            <div class="object__btn object__btn-change btn-outline">
-              <button type="button" class="object__btn-plus">-</button>
-              <span>5 ft</span>
-              <button type="button" class="object__btn-minus">+</button>
+            <div class="object__btns object__btns--four">
+              <div class="object__btn-token">
+                <p class="object__prising-label">Choose token</p>
+
+                <button type="button" class="object__btn-select">
+                  <div class="object__btn-selected">
+                    <img class="object__btn-selected-icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                    <span class="object__btn-selected-text">USDT</span>
+                    <img class="object__btn-selected-arrow" width="12" height="12"
+                      src="./img/icons/chevron-down-outline.svg" alt="icon">
+                  </div>
+                </button>
+              </div>
+
+              <div class="object__btn-token">
+                <p class="object__prising-label">enter amount</p>
+
+                <div class="object__amount">
+                  <input class="object__amount-input" type="text" value="150,000.00">
+                  <div class="object__amount-token">USDT</div>
+                </div>
+              </div>
+
+              <button type="button" class="object__btn object__btn--grey btn">15 m<sup>2</sup> (12%)</button>
+              <button type="button" class="object__btn btn">BUY NOW</button>
             </div>
-
-            <button type="button" class="object__btn btn">BUY</button>
           </div>
+
+
         </div>
       </div>
     </div>

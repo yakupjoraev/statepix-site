@@ -6,6 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -24,11 +33,103 @@
       </div>
 
       <ul class="menu">
-        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Портфолио</a></li>
-        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Инфо</a></li>
-        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
-        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
-        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
+        <li class="menu__item menu__item--main"><a href="#" class="menu__item-link">Products</a></li>
+        <li class="menu__item menu__item--main"><a href="#" class="menu__item-link">Technology</a></li>
+        <li class="menu__item menu__item--main"><a href="#" class="menu__item-link">Solutions</a></li>
+        <li class="menu__item menu__item--main"><a href="#" class="menu__item-link">Security</a></li>
+        <li class="menu__item menu__item--main"><a href="#" class="menu__item-link">Company</a></li>
+
+
+
+        <li class="menu__item menu__item-search">
+          <div class="header-search">
+            <input class="header-search__input" type="search" placeholder="Type here...">
+            <img class="header-search__icon" width="16" height="16" src="./img/icons/search.svg" alt="icon">
+          </div>
+        </li>
+
+
+
+
+
+        <li class="menu__item menu__item-select">
+          <div class="token-select">
+            <button type="button" class="token-select__selected">
+              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+              <p class="token-select__text">USDT</p>
+              <img class="token-select__arrow" width="20" height="20" src="./img/icons/chevron-down-outline.svg"
+                alt="token">
+            </button>
+
+            <ul class="token-select__list">
+              <li class="token-select__item">
+                <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                <p class="token-select__text">USDT</p>
+              </li>
+
+              <li class="token-select__item">
+                <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                <p class="token-select__text">USDT</p>
+              </li>
+
+              <li class="token-select__item">
+                <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                <p class="token-select__text">USDT</p>
+              </li>
+
+              <li class="token-select__item">
+                <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                <p class="token-select__text">USDT</p>
+              </li>
+
+              <li class="token-select__item token-select__item--head">
+                <div class="token-select__item-border"></div>
+                <p class="token-select__item-label">FIAT</p>
+              </li>
+
+              <li class="token-select__item">
+                <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                <p class="token-select__text">USDT</p>
+              </li>
+
+              <li class="token-select__item">
+                <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                <p class="token-select__text">USDT</p>
+              </li>
+
+              <li class="token-select__item">
+                <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                <p class="token-select__text">USDT</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+
+        <li class="menu__item menu__item-ft-mt">
+          <div class="menu__item-ft">ft<sup>2</sup></div>
+          <div class="menu__item-mt active">m<sup>2</sup></div>
+        </li>
+
+
+        <li class="menu__item menu__item-icons">
+          <a href="#" class="menu__item-link">
+            <img width="20" height="20" src="./img/icons/globe.svg" alt="globe icon">
+          </a>
+
+          <a href="#" class="menu__item-link">
+            <img width="20" height="20" src="./img/icons/sharp.svg" alt="sharp icon">
+          </a>
+
+          <a href="#" class="menu__item-link">
+            <img width="20" height="20" src="./img/icons/Notification.svg" alt="Notification icon">
+          </a>
+
+          <a href="#" class="menu__item-link">
+            <img width="20" height="20" src="./img/icons/clarity_avatar-solid.svg" alt="avatar icon">
+          </a>
+        </li>
       </ul>
       <div class="burger">
         <span></span>
@@ -262,24 +363,30 @@
               <p class="object__prising-label">Purchase Price</p>
               <div class="object__prising-sum">$2,300,000.00</div>
             </div>
-
-            <div class="object__prising-column">
-              <p class="object__prising-title"></p>
-              <p class="object__prising-label">1 ft2 Price</p>
-              <div class="object__prising-sum">$42,592.00</div>
-            </div>
           </div>
 
-          <div class="object__btns">
-            <button type="button" class="object__btn btn">PURCHASE NOW</button>
+          <div class="object__btns object__btns--end">
 
-            <div class="object__btn object__btn-change btn-outline">
+            <div class="object__btn-token">
+              <p class="object__prising-label">Choose token</p>
+
+              <button type="button" class="object__btn-select">
+                <div class="object__btn-selected">
+                  <img class="object__btn-selected-icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                  <span class="object__btn-selected-text">USDT</span>
+                  <img class="object__btn-selected-arrow" width="12" height="12"
+                    src="./img/icons/chevron-down-outline.svg" alt="icon">
+                </div>
+              </button>
+            </div>
+
+            <!-- <div class="object__btn object__btn-change btn-outline">
               <button type="button" class="object__btn-plus">-</button>
               <span>5</span>
               <button type="button" class="object__btn-minus">+</button>
-            </div>
+            </div> -->
 
-            <button type="button" class="object__btn btn btn-outline btn-sup">BUY ft<sup>2</sup></button>
+            <button type="button" class="object__btn btn ">BUY NOW</button>
           </div>
         </div>
       </div>
@@ -430,7 +537,7 @@
     <ul class="releted-objects__list cards">
       <li class="card">
         <div class="card__picture">
-          <div class="card__badge">OFFICE SPACE</div>
+          <div class="card__badge">OFFICE</div>
           <img class="card__pic" width="294" height="300" src="./img/card.jpg" alt="picture">
         </div>
 
@@ -473,7 +580,7 @@
 
       <li class="card">
         <div class="card__picture">
-          <div class="card__badge">OFFICE SPACE</div>
+          <div class="card__badge">OFFICE</div>
           <img class="card__pic" width="294" height="300" src="./img/card.jpg" alt="picture">
         </div>
 
@@ -516,7 +623,7 @@
 
       <li class="card">
         <div class="card__picture">
-          <div class="card__badge">OFFICE SPACE</div>
+          <div class="card__badge">OFFICE</div>
           <img class="card__pic" width="294" height="300" src="./img/card.jpg" alt="picture">
         </div>
 
@@ -559,7 +666,7 @@
 
       <li class="card">
         <div class="card__picture">
-          <div class="card__badge">OFFICE SPACE</div>
+          <div class="card__badge">OFFICE</div>
           <img class="card__pic" width="294" height="300" src="./img/card.jpg" alt="picture">
         </div>
 
@@ -602,7 +709,7 @@
 
       <li class="card">
         <div class="card__picture">
-          <div class="card__badge">OFFICE SPACE</div>
+          <div class="card__badge">OFFICE</div>
           <img class="card__pic" width="294" height="300" src="./img/card.jpg" alt="picture">
         </div>
 

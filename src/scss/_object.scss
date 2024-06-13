@@ -263,6 +263,10 @@
     align-items: center;
     column-gap: 20px;
 
+    &--end {
+      align-items: flex-end;
+    }
+
     @media (max-width: $breakpoint768) {
       flex-direction: column;
       align-items: flex-start;
@@ -522,4 +526,346 @@
     object-fit: cover;
     border-radius: 15px;
   }
+}
+
+
+.object {
+
+  // .object__btn-token
+
+  &__btn-token {
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+    }
+  }
+
+  // .object__prising-title
+
+  &__prising-title {}
+
+  // .object__btn-select
+
+  &__btn-select {
+    border: 1px solid #a0aec0;
+    border-radius: 6px;
+    background-color: transparent;
+    outline: 0;
+    min-width: 150px;
+    height: 48px;
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+    }
+  }
+
+  // .object__btn-selected
+
+  &__btn-selected {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 14px;
+
+  }
+
+  // .object__btn-selected-icon
+
+  &__btn-selected-icon {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+  }
+
+  // .object__btn-selected-text
+
+  &__btn-selected-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #a0aec0;
+  }
+
+  // .object__btn-selected-arrow
+
+  &__btn-selected-arrow {
+    margin-left: auto;
+  }
+}
+
+.object {
+
+  // .object__blocks
+
+  &__blocks {
+    display: grid;
+    grid-template-columns: 152px 1fr;
+    column-gap: 46px;
+    align-items: flex-end;
+
+    @media (max-width: 1600px) {
+      grid-template-columns: 120px 1fr;
+      column-gap: 16px;
+    }
+
+    @media (max-width: $breakpoint1450) {
+      grid-template-columns: 152px 1fr;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+  }
+
+  // .object__percent
+
+  &__percent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  // .object___percent-progressbar
+
+  &__percent-progressbar {}
+
+  // .object__percent-rows
+
+  &__percent-rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  // .object__percent-row
+
+  &__percent-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8px;
+  }
+
+  // .object__percent-name
+
+  &__percent-name {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+    color: #a0aec0;
+  }
+
+  // .object__percent-name-fiol
+
+  &__percent-name-fiol {
+    width: 10px;
+    min-width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #E488CC;
+  }
+
+  // .object__percent-name-text
+
+  &__percent-name-text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+    color: #a0aec0;
+  }
+
+  // .object__percent-sums
+
+  &__percent-sums {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    justify-content: flex-end;
+
+    white-space: nowrap;
+    font-weight: 700;
+    text-align: right;
+    font-size: 12px;
+    line-height: 140%;
+    color: #2d3748;
+  }
+
+  // .object__percent-name-grey
+
+  &__percent-name-grey {
+    width: 10px;
+    min-width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #e6ebf2;
+  }
+
+  // .object__btns
+
+  &__btns {}
+
+  // .object__btns--four
+
+  &__btns--four {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+
+    .object__btn.btn {
+      max-width: 100%;
+    }
+
+    @media (max-width: 1600px) {
+      grid-template-columns: 120px 1fr;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .object__btn-token
+
+  &__btn-token {}
+
+  // .object__prising-label
+
+  &__prising-label {}
+
+  // .object__btn-select
+
+  &__btn-select {
+
+    @media (max-width: 1600px) {
+      min-width: 120px;
+    }
+  }
+
+  // .object__btn-selected
+
+  &__btn-selected {}
+
+  // .object__btn-selected-icon
+
+  &__btn-selected-icon {}
+
+  // .object__btn-selected-text
+
+  &__btn-selected-text {}
+
+  // .object__btn-selected-arrow
+
+  &__btn-selected-arrow {}
+
+  // .object__amount
+
+  &__amount {
+    position: relative;
+  }
+
+  // .object__amount-input
+
+  &__amount-input {
+    padding: 10px 60px 10px 16px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #a0aec0;
+    border-radius: 6px;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #2d3748;
+  }
+
+  // .object__amount-token
+
+  &__amount-token {
+    position: absolute;
+    bottom: 12px;
+    right: 14px;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #a0aec0;
+  }
+
+  // .object__btn
+
+  &__btn {}
+
+  // .object__btn--grey
+
+  &__btn--grey {
+    min-width: 150px;
+    height: 48px;
+    background: #f4f6ff;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #2d3748;
+
+    @media (max-width: 1600px) {
+      min-width: 120px;
+    }
+  }
+}
+
+
+@keyframes growProgressBar {
+
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+.object__percent-progressbar {
+  --size: 12rem;
+  --fg: #E488CC;
+  --bg: #e6ebf2;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: 101px;
+  height: 101px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(closest-side, white 70%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #2d3748;
+  transform: scaleX(-1);
+  /* Добавлено для изменения направления */
+}
+
+.object__percent-progressbar::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  transform: scaleX(-1);
+  /* Добавлено для изменения направления */
 }

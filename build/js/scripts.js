@@ -119,6 +119,34 @@ function objectGallerySlider() {
 
 objectGallerySlider();
 
+document.addEventListener('DOMContentLoaded', () => {
+  const tokenSelect = document.querySelector('.token-select');
+
+  if (!tokenSelect) {
+    return null
+  }
+
+  const tokenSelectButton = tokenSelect.querySelector('.token-select__selected');
+
+  tokenSelectButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    tokenSelect.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!tokenSelect.contains(e.target)) {
+      tokenSelect.classList.remove('active');
+    }
+  });
+
+  tokenSelect.querySelectorAll('.token-select__item').forEach(item => {
+    item.addEventListener('click', () => {
+      tokenSelect.classList.remove('active');
+    });
+  });
+});
+
+
 
 
 const openModalBtns = document.querySelectorAll('.open-modal-btn');

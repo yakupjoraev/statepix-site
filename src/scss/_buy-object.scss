@@ -27,6 +27,14 @@
     position: absolute;
     top: 24px;
     left: 24px;
+
+    .custom-select-container {
+      min-width: 234px;
+
+      .custom-select-opener {
+        padding: 18px 20px;
+      }
+    }
   }
 
   // .buy-object__map-pic

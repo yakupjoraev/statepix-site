@@ -324,7 +324,7 @@
     justify-content: center;
     column-gap: 8px;
     border-radius: 6px;
-    background-color: #e488cc;
+    background-color: var(--white);
     padding: 10px 32px;
     font-family: var(--font-family);
     font-weight: 800;
@@ -332,6 +332,10 @@
     line-height: 100%;
     text-transform: uppercase;
     color: var(--white);
+
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(15deg, #df87f1 9.96%, #219f70 100%) border-box;
+    border: 1px solid transparent;
   }
 
   // .objects__form-sizes
@@ -370,7 +374,7 @@
     }
 
     &.active {
-      background: linear-gradient(73deg, #df87f1 0%, #219f70 100%), rgba(0, 0, 0, 0.2);
+      background: linear-gradient(15deg, #df87f1 0%, #219f70 100%), rgba(0, 0, 0, 0.2);
 
       span {
         color: var(--white);
