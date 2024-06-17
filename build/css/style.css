@@ -1134,7 +1134,7 @@ body.locked {
   color: #2d3748;
 }
 
-.table__status {
+.table__status-text {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
@@ -1142,11 +1142,11 @@ body.locked {
   color: var(--black);
 }
 
-.table__status.table__status--complete {
+.table__status-text.table__status-text--complete {
   color: var(--green);
 }
 
-.table__status.table__status--progress {
+.table__status-text.table__status-text--progress {
   color: #E488CC;
 }
 

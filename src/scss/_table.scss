@@ -224,18 +224,18 @@
   color: #2d3748;
 }
 
-.table__status {
+.table__status-text {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
   color: var(--black);
 
-  &.table__status--complete {
+  &.table__status-text--complete {
     color: var(--green);
   }
 
-  &.table__status--progress {
+  &.table__status-text--progress {
     color: #E488CC;
   }
 }
