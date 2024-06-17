@@ -1,17 +1,10 @@
 .p2p {
-  margin-bottom: 90px;
   padding: 24px 20px;
   border-radius: 15px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.02);
   background: var(--white);
 
-  @media (max-width: $breakpoint992) {
-    margin-bottom: 60px;
-  }
 
-  @media (max-width: $breakpoint768) {
-    margin-bottom: 40px;
-  }
 
   // .p2p__inner
 
