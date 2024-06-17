@@ -5111,6 +5111,10 @@ input[type=range]::-moz-range-thumb {
   row-gap: 10px;
 }
 
+.filters-modal__inputs--five {
+  grid-template-columns: 135px 1fr 1fr 1fr 1fr;
+}
+
 .filters-modal__checkbox-input {
   position: absolute;
   width: 0;
@@ -6390,6 +6394,10 @@ input[type=range]::-moz-range-thumb {
   .filters-modal__row-text {
     min-width: 60px;
     text-align: left;
+  }
+
+  .filters-modal__inputs--five {
+    grid-template-columns: 75px 1fr 1fr 1fr 1fr;
   }
 
   .filters-modal__checkbox-label {

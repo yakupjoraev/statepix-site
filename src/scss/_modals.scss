@@ -351,6 +351,14 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
   row-gap: 10px;
+
+  &--five {
+    grid-template-columns: 135px 1fr 1fr 1fr 1fr;
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: 75px 1fr 1fr 1fr 1fr;
+    }
+  }
 }
 
 .filters-modal__checkbox {}
