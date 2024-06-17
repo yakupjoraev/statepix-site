@@ -25,11 +25,18 @@
   padding: 24px 24px 46px;
   background-color: #F4F6FF;
 
+  &--p2p {
+    .content {
+      grid-column: span 2;
+    }
+  }
+
   .content {
     padding: 0;
   }
 
-  .footer {
+  .footer,
+  .new-footer {
     grid-column: span 2;
   }
 
@@ -39,9 +46,17 @@
 
     padding: 0;
 
-    .footer {}
+    &--p2p {
+
+      padding: 20px 12px;
+    }
 
     .footer {
+      padding: 20px 16px 120px 16px;
+      grid-column: span 1;
+    }
+
+    .new-footer {
       padding: 20px 16px 120px 16px;
       grid-column: span 1;
     }
@@ -49,6 +64,16 @@
 
   @media (max-width: $breakpoint768) {
     padding: 20px 12px;
+
+    .footer {
+      padding: 20px 0 120px 0;
+      grid-column: span 1;
+    }
+
+    .new-footer {
+      padding: 20px 0 120px 0;
+      grid-column: span 1;
+    }
   }
 
 }

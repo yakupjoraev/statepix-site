@@ -109,6 +109,8 @@
   // .table__date
 
   &__date {
+    font-family: var(--font-family);
+    font-weight: 400;
     font-size: 14px;
     line-height: 100%;
     color: #a0aec0;
@@ -132,6 +134,11 @@
     background-color: transparent;
     border: 0;
     outline: 0;
+
+    &.btn {
+      max-width: 120px;
+      width: 100%;
+    }
   }
 
   // .table__status
@@ -142,6 +149,7 @@
     justify-content: center;
     width: 106px;
     height: 24px;
+    margin-left: auto;
     border-radius: 3px;
 
     font-family: var(--font-family);
@@ -169,4 +177,92 @@
   &__status--disline {
     background: #cbd5e0;
   }
+}
+
+.table__thaed-last {
+  width: 106px;
+  margin-left: auto;
+}
+
+.table__info-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: #e6ebf2;
+}
+
+.table__info-nickname {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #2d3748;
+
+  img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.table__info-orders {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.table__info-order {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #2d3748;
+}
+
+.table__status {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--black);
+
+  &.table__status--complete {
+    color: var(--green);
+  }
+
+  &.table__status--progress {
+    color: #E488CC;
+  }
+}
+
+.table__diagram {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  .object__percent-progressbar {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(closest-side, #fff 50%, transparent 0 99.9%, #fff 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.table__gradient-text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  background: linear-gradient(53deg, #db87ef 0%, #279e74 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

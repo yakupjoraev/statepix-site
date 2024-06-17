@@ -30,6 +30,7 @@
 body {
   background-color: #f8f9fa;
   font-family: var(--font-family);
+  font-weight: 400;
 
   &.locked {
     overflow: hidden;

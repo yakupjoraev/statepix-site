@@ -1,0 +1,127 @@
+.p2p {
+  margin-bottom: 90px;
+  padding: 24px 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.02);
+  background: var(--white);
+
+  @media (max-width: $breakpoint992) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 40px;
+  }
+
+  // .p2p__inner
+
+  &__inner {}
+
+  // .p2p__form
+
+  &__form {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 100%;
+    margin-bottom: 24px;
+
+    .token-select__selected {
+      width: 180px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      flex-wrap: wrap;
+
+      .token-select__selected {
+        width: 160px;
+      }
+
+      .custom-select-container {
+        width: 160px;
+      }
+
+      .datepicker__input {
+        width: 160px;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+
+      .token-select__selected,
+      .token-select {
+        width: 100%;
+      }
+
+      .custom-select-container {
+        width: 100%;
+      }
+
+      .datepicker__input,
+      .datepicker {
+        width: 100%;
+      }
+    }
+  }
+
+  // .p2p__input
+
+  &__input {
+    padding: 10px 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    width: 220px;
+    height: 40px;
+    background-color: var(--white);
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #2d3748;
+
+    &::placeholder {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      color: #a0aec0;
+    }
+
+    @media (max-width: $breakpoint992) {
+      width: 160px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+    }
+  }
+
+  // .p2p__btn
+
+  &__btn {
+    margin-left: auto;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #2d3748;
+    width: 120px;
+    height: 40px;
+  }
+
+  // .p2p__main
+
+  &__main {}
+
+  // .p2p__table
+
+  &__table {
+    overflow: hidden;
+    width: calc(100vw - 110px);
+
+    @media (max-width: $breakpoint992) {
+      width: calc(100vw - 80px);
+    }
+  }
+}
