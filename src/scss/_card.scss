@@ -29,9 +29,24 @@
   position: relative;
   display: grid;
   row-gap: 20px;
+  transition: 0.3s linear;
+  cursor: pointer;
 
   @media (max-width: $breakpoint768) {
     align-content: baseline;
+  }
+
+  // .card__link
+
+  &__link {
+    position: relative;
+    display: grid;
+    row-gap: 20px;
+    transition: 0.3s linear;
+
+    @media (max-width: $breakpoint768) {
+      align-content: baseline;
+    }
   }
 
   // .card__picture
@@ -42,6 +57,7 @@
     height: 300px;
     border-radius: 12px;
     overflow: hidden;
+    transition: 0.3s linear;
 
     &::before {
       content: '';
@@ -136,15 +152,22 @@
     display: flex;
     flex-direction: column;
     row-gap: 12px;
-    padding-right: 100px;
+    transition: 0.3s linear;
+    // padding-right: 100px;
 
-    @media (max-width: $breakpoint992) {
-      padding-right: 72px;
+    &:has(.card__percent) {
+
+      .card__info,
+      .card__advantages {
+        padding-right: 62px;
+
+        @media (max-width: $breakpoint768) {
+          padding-right: 0;
+        }
+      }
+
     }
 
-    @media (max-width: $breakpoint768) {
-      padding-right: 0;
-    }
   }
 
   // .card__info
@@ -185,8 +208,8 @@
   &__advantages {
     display: flex;
     align-items: center;
-    column-gap: 14px;
-    row-gap: 14px;
+    column-gap: 10px;
+    row-gap: 10px;
     flex-wrap: wrap;
 
     @media (max-width: $breakpoint992) {
@@ -209,7 +232,9 @@
 
   // .card__advantage-icon
 
-  &__advantage-icon {}
+  &__advantage-icon {
+    transition: 0.3s linear;
+  }
 
   // .card__advantage-texts
 
@@ -242,11 +267,11 @@
 
   &__percent {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     right: 0;
-    width: 66px;
-    height: 66px;
+    width: 56px;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,6 +283,7 @@
     line-height: 120%;
     text-align: center;
     color: #2d3748;
+    transition: 0.3s linear;
 
     @media (max-width: $breakpoint768) {
       position: static;
@@ -269,4 +295,155 @@
       font-size: 12px;
     }
   }
+}
+
+.card {
+  align-content: baseline;
+
+  @media (hover:hover) {
+    &:hover {
+      row-gap: 0;
+      align-content: baseline;
+
+
+      .card__footer {
+        padding: 20px 18px;
+        border-radius: 0 0 15px 15px;
+        background-color: var(--white);
+      }
+
+      .card__picture {
+        height: 194px;
+        border-radius: 12px 12px 0 0;
+      }
+
+      .card__pic {
+        border-radius: 12px 12px 0 0;
+      }
+
+      .card__advantage-icon {
+        width: 18px;
+        height: 18px;
+      }
+
+      .card__text {
+        font-size: 12px;
+      }
+
+      .card__advantage-sum {
+        font-size: 14px;
+      }
+
+      .card__advantages {
+        column-gap: 8px;
+        row-gap: 8px;
+      }
+
+      .card__btns {
+        height: auto;
+        transform: scale(1);
+      }
+
+      .card__price {
+        font-size: 16px;
+      }
+
+      .card__percent {
+        // top: 30%;
+        right: 12px;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint768) {
+    row-gap: 0;
+    align-content: baseline;
+
+
+    .card__footer {
+      padding: 16px 8px;
+    }
+
+    .card__picture {
+      height: 194px;
+    }
+
+
+    .card__advantage-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    .card__text {
+      font-size: 10px;
+    }
+
+    .card__advantage-sum {
+      font-size: 12px;
+    }
+
+    .card__btns {
+      height: auto;
+      transform: scale(1);
+    }
+
+    .card__price {
+      font-size: 14px;
+    }
+  }
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 12px;
+  flex-wrap: wrap;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  // font-size: 18px;
+  font-size: 0;
+  line-height: 120%;
+  color: #2d3748;
+}
+
+.card__text {
+  // font-size: 12px;
+  font-size: 0;
+  line-height: 140%;
+  color: #a0aec0;
+  transition: 0.1s linear;
+}
+
+.card__advantage-sum {
+  white-space: nowrap;
+  font-weight: 700;
+  // font-size: 16px;
+  font-size: 0;
+  line-height: 120%;
+  text-align: right;
+  color: #2d3748;
+  transition: 0.3s linear;
+}
+
+.card__btns {
+  transform: scale(0);
+  height: 0;
+  transition: 0.3s linear;
+}
+
+.card__btns--column-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 12px;
+  row-gap: 12px;
+
+  @media (max-width: $breakpoint768) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card__btn {
+  height: 36px;
 }

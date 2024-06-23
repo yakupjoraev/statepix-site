@@ -734,6 +734,19 @@ body.locked {
   position: relative;
   display: grid;
   row-gap: 20px;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.card__link {
+  position: relative;
+  display: grid;
+  row-gap: 20px;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .card__picture {
@@ -742,6 +755,9 @@ body.locked {
   height: 300px;
   border-radius: 12px;
   overflow: hidden;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .card__picture::before {
@@ -820,7 +836,14 @@ body.locked {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 12px;
-  padding-right: 100px;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.card__footer:has(.card__percent) .card__info,
+.card__footer:has(.card__percent) .card__advantages {
+  padding-right: 62px;
 }
 
 .card__info {
@@ -854,10 +877,10 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 14px;
-     -moz-column-gap: 14px;
-          column-gap: 14px;
-  row-gap: 14px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -872,6 +895,12 @@ body.locked {
   -webkit-column-gap: 6px;
      -moz-column-gap: 6px;
           column-gap: 6px;
+}
+
+.card__advantage-icon {
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .card__advantage-texts {
@@ -902,13 +931,13 @@ body.locked {
 
 .card__percent {
   position: absolute;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 0;
-  width: 66px;
-  height: 66px;
+  width: 56px;
+  height: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,6 +954,80 @@ body.locked {
   line-height: 120%;
   text-align: center;
   color: #2d3748;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.card {
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
+}
+
+.card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 0;
+  line-height: 120%;
+  color: #2d3748;
+}
+
+.card__text {
+  font-size: 0;
+  line-height: 140%;
+  color: #a0aec0;
+  -webkit-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+.card__advantage-sum {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 0;
+  line-height: 120%;
+  text-align: right;
+  color: #2d3748;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.card__btns {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  height: 0;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.card__btns--column-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  row-gap: 12px;
+}
+
+.card__btn {
+  height: 36px;
 }
 
 .table {
@@ -6876,10 +6979,6 @@ input[type=range]::-moz-range-thumb {
             column-gap: 16px;
   }
 
-  .card__footer {
-    padding-right: 72px;
-  }
-
   .card__title {
     font-size: 16px;
   }
@@ -7091,6 +7190,11 @@ input[type=range]::-moz-range-thumb {
         align-content: baseline;
   }
 
+  .card__link {
+    -ms-flex-line-pack: baseline;
+        align-content: baseline;
+  }
+
   .card__picture {
     height: 200px;
     border-radius: 8px;
@@ -7115,7 +7219,8 @@ input[type=range]::-moz-range-thumb {
     border-radius: 8px;
   }
 
-  .card__footer {
+  .card__footer:has(.card__percent) .card__info,
+  .card__footer:has(.card__percent) .card__advantages {
     padding-right: 0;
   }
 
@@ -7139,6 +7244,48 @@ input[type=range]::-moz-range-thumb {
     width: 40px;
     height: 40px;
     font-size: 12px;
+  }
+
+  .card {
+    row-gap: 0;
+    -ms-flex-line-pack: baseline;
+        align-content: baseline;
+  }
+
+  .card .card__footer {
+    padding: 16px 8px;
+  }
+
+  .card .card__picture {
+    height: 194px;
+  }
+
+  .card .card__advantage-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .card .card__text {
+    font-size: 10px;
+  }
+
+  .card .card__advantage-sum {
+    font-size: 12px;
+  }
+
+  .card .card__btns {
+    height: auto;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .card .card__price {
+    font-size: 14px;
+  }
+
+  .card__btns--column-2 {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .releted-objects {
@@ -7677,6 +7824,62 @@ input[type=range]::-moz-range-thumb {
 
   .breadcrumbs__link:hover {
     color: var(--black-color);
+  }
+
+  .card:hover {
+    row-gap: 0;
+    -ms-flex-line-pack: baseline;
+        align-content: baseline;
+  }
+
+  .card:hover .card__footer {
+    padding: 20px 18px;
+    border-radius: 0 0 15px 15px;
+    background-color: var(--white);
+  }
+
+  .card:hover .card__picture {
+    height: 194px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .card:hover .card__pic {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .card:hover .card__advantage-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .card:hover .card__text {
+    font-size: 12px;
+  }
+
+  .card:hover .card__advantage-sum {
+    font-size: 14px;
+  }
+
+  .card:hover .card__advantages {
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    row-gap: 8px;
+  }
+
+  .card:hover .card__btns {
+    height: auto;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .card:hover .card__price {
+    font-size: 16px;
+  }
+
+  .card:hover .card__percent {
+    right: 12px;
   }
 
   .aside__item:hover {
