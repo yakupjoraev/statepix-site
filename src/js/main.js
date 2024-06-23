@@ -178,30 +178,34 @@ function objectGallerySlider() {
 objectGallerySlider();
 
 document.addEventListener('DOMContentLoaded', () => {
-  const tokenSelect = document.querySelector('.token-select');
+  let tokenSelects = document.querySelectorAll('.token-select');
 
-  if (!tokenSelect) {
+  if (!tokenSelects) {
     return null
   }
 
-  const tokenSelectButton = tokenSelect.querySelector('.token-select__selected');
+  tokenSelects.forEach(tokenSelect => {
+    const tokenSelectButton = tokenSelect.querySelector('.token-select__selected');
 
-  tokenSelectButton.addEventListener('click', (e) => {
-    e.stopPropagation();
-    tokenSelect.classList.toggle('active');
-  });
+    tokenSelectButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+      tokenSelect.classList.toggle('active');
+    });
 
-  document.addEventListener('click', (e) => {
-    if (!tokenSelect.contains(e.target)) {
-      tokenSelect.classList.remove('active');
-    }
-  });
+    document.addEventListener('click', (e) => {
+      if (!tokenSelect.contains(e.target)) {
+        tokenSelect.classList.remove('active');
+      }
+    });
 
-  tokenSelect.querySelectorAll('.token-select__item').forEach(item => {
-    item.addEventListener('click', () => {
-      tokenSelect.classList.remove('active');
+    tokenSelect.querySelectorAll('.token-select__item').forEach(item => {
+      item.addEventListener('click', () => {
+        tokenSelect.classList.remove('active');
+      });
     });
   });
+
+
 });
 
 

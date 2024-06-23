@@ -4,11 +4,11 @@
 
     <div class="modals__btn open-modal-btn" data-modal-id="filters-modal">Filters</div>
 
-    <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_withdraw</div>
-    <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_withdraw2</div>
-    <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_deposit</div>
-    <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_deposit2</div>
-    <div class="modals__btn open-modal-btn" data-modal-id="modal1">Wallet_swap</div>
+    <div class="modals__btn open-modal-btn" data-modal-id="withdraw1">Wallet_withdraw</div>
+    <div class="modals__btn open-modal-btn" data-modal-id="withdraw2">Wallet_withdraw2</div>
+    <div class="modals__btn open-modal-btn" data-modal-id="deposit1">Wallet_deposit</div>
+    <div class="modals__btn open-modal-btn" data-modal-id="deposit2">Wallet_deposit2</div>
+    <div class="modals__btn open-modal-btn" data-modal-id="wallet-swap-1">Wallet_swap</div>
     <div class="modals__btn open-modal-btn" data-modal-id="wallet-swap-2">Wallet_swap2</div>
 
   </div>
@@ -351,6 +351,762 @@
         </div>
       </div>
 
+      <div class="modal" id="withdraw1">
+        <div class="modal-content">
+          <form class="modal__form" action="#">
+            <div class="modal__head">
+              <div class="modal__logo">
+                <img width="100" height="21" src="./img/card-logo-black.svg" alt="logo">
+              </div>
+
+              <h2 class="modal__title">Withdrawal Transaction</h2>
+
+              <button class="close-modal-btn"><img src="./img/icons/close-modal.svg" alt="close"></button>
+            </div>
+
+
+
+
+            <div class="modal__main">
+              <div class="withdraw">
+                <div class="input__list">
+                  <div class="input__item">
+                    <label class="input__item-label" for="">From</label>
+                    <div class="input__item-container">
+                      <input class="input__item-input" type="text" placeholder="0x029njg847n874n48902900">
+                      <img class="input__item-icon" width="20" height="20" src="./img/icons/input-link.svg"
+                        alt="link icon">
+                    </div>
+
+                  </div>
+                  <div class="input__item">
+                    <label class="input__item-label" for="">To</label>
+                    <div class="input__item-container">
+                      <input class="input__item-input" type="text" placeholder="0x029njg847n874n48902900">
+                      <img class="input__item-icon" width="20" height="20" src="./img/icons/input-link.svg"
+                        alt="link icon">
+                    </div>
+
+                  </div>
+
+                  <div class="input__items">
+                    <div class="input__item">
+                      <label class="input__item-label" for="">Token</label>
+
+                      <div class="token-select">
+                        <button type="button" class="token-select__selected">
+                          <img class="token-select__icon" width="20" height="20" src="./img/bitcoin.svg" alt="token">
+                          <p class="token-select__text">Bitcoin (BTC)</p>
+                          <img class="token-select__arrow" width="20" height="20"
+                            src="./img/icons/chevron-down-outline.svg" alt="token">
+                        </button>
+
+                        <ul class="token-select__list">
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item token-select__item--head">
+                            <div class="token-select__item-border"></div>
+                            <p class="token-select__item-label">FIAT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="input__item">
+                      <label class="input__item-label" for="">Network</label>
+
+                      <div class="token-select">
+                        <button type="button" class="token-select__selected">
+                          <img class="token-select__icon" width="20" height="20" src="./img/bitcoin.svg" alt="token">
+                          <p class="token-select__text">Bitcoin (BTC)</p>
+                          <img class="token-select__arrow" width="20" height="20"
+                            src="./img/icons/chevron-down-outline.svg" alt="token">
+                        </button>
+
+                        <ul class="token-select__list">
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item token-select__item--head">
+                            <div class="token-select__item-border"></div>
+                            <p class="token-select__item-label">FIAT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="input__item">
+                    <label class="input__item-label" for="">Network</label>
+
+                    <div class="token-select">
+                      <button type="button" class="token-select__selected">
+                        <img class="token-select__icon" width="20" height="20" src="./img/bitcoin.svg" alt="token">
+                        <p class="token-select__text">Bitcoin (BTC)</p>
+                        <img class="token-select__arrow" width="20" height="20"
+                          src="./img/icons/chevron-down-outline.svg" alt="token">
+                      </button>
+
+                      <ul class="token-select__list">
+                        <li class="token-select__item">
+                          <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                          <p class="token-select__text">USDT</p>
+                        </li>
+
+                        <li class="token-select__item">
+                          <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                          <p class="token-select__text">USDT</p>
+                        </li>
+
+                        <li class="token-select__item">
+                          <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                          <p class="token-select__text">USDT</p>
+                        </li>
+
+                        <li class="token-select__item">
+                          <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                          <p class="token-select__text">USDT</p>
+                        </li>
+
+                        <li class="token-select__item token-select__item--head">
+                          <div class="token-select__item-border"></div>
+                          <p class="token-select__item-label">FIAT</p>
+                        </li>
+
+                        <li class="token-select__item">
+                          <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                          <p class="token-select__text">USDT</p>
+                        </li>
+
+                        <li class="token-select__item">
+                          <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                          <p class="token-select__text">USDT</p>
+                        </li>
+
+                        <li class="token-select__item">
+                          <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                          <p class="token-select__text">USDT</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="input__item">
+                  <label class="input__item-label" for="">Amount</label>
+                  <div class="input__item-container">
+                    <input class="input__item-input" type="text" value="0.000497">
+                    <img class="input__item-icon" width="20" height="20" src="./img/bitcoin.svg" alt="bitcoin">
+
+                    <div class="input__item-token">BTC</div>
+                  </div>
+
+                  <div class="input__item-footer">
+                    <div class="input__item-info">Network fee: 10 TRX</div>
+                    <a class="input__item-all" href="#">All</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal__footer">
+              <button type="submit" class="modal__btn btn">SEND</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="modal" id="withdraw2">
+        <div class="modal-content">
+          <form class="modal__form modal__form--mini" action="#">
+            <div class="modal__head">
+              <div class="modal__logo">
+                <img width="100" height="21" src="./img/card-logo-black.svg" alt="logo">
+              </div>
+
+              <img class="modal__check-pic" width="160" height="160" src="./img/verification-completed-check.svg"
+                alt="check">
+
+              <h2 class="modal__title">Transaction completed successfully</h2>
+
+              <p class="modal__text">
+                Lorem ipsum dolor sit amet consectetur. Amet ullamcorper mauris sollicitudin odio odio ornare proin.
+                Rutrum sem pretium augue tempus odio.
+              </p>
+
+              <button class="close-modal-btn"><img src="./img/icons/close-modal.svg" alt="close"></button>
+            </div>
+
+
+            <div class="modal__footer">
+              <button type="submit" class="modal__btn btn">MAIN PAGE</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="modal" id="deposit1">
+        <div class="modal-content">
+          <form class="modal__form" action="#">
+            <div class="modal__head">
+              <div class="modal__logo">
+                <img width="100" height="21" src="./img/card-logo-black.svg" alt="logo">
+              </div>
+
+              <h2 class="modal__title">Swap Transaction</h2>
+
+              <button class="close-modal-btn"><img src="./img/icons/close-modal.svg" alt="close"></button>
+            </div>
+
+            <div class="modal__main">
+              <div class="deposit">
+                <div class="deposit__qr">
+                  <img class="deposit__qr-img" width="148" height="148" src="./img/qr.png" alt="qr code">
+                </div>
+
+
+
+                <div class="input__list">
+                  <div class="input__item">
+                    <label class="input__item-label" for="">sender address</label>
+                    <div class="input__item-container">
+                      <input class="input__item-input" type="text" placeholder="0x029njg847n874n48902900">
+                      <img class="input__item-icon" width="20" height="20" src="./img/icons/input-link.svg"
+                        alt="link icon">
+                    </div>
+
+                  </div>
+
+                  <div class="input__items">
+                    <div class="input__item">
+                      <label class="input__item-label" for="">Token</label>
+
+                      <div class="token-select">
+                        <button type="button" class="token-select__selected">
+                          <img class="token-select__icon" width="20" height="20" src="./img/bitcoin.svg" alt="token">
+                          <p class="token-select__text">Bitcoin (BTC)</p>
+                          <img class="token-select__arrow" width="20" height="20"
+                            src="./img/icons/chevron-down-outline.svg" alt="token">
+                        </button>
+
+                        <ul class="token-select__list">
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item token-select__item--head">
+                            <div class="token-select__item-border"></div>
+                            <p class="token-select__item-label">FIAT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="input__item">
+                      <label class="input__item-label" for="">Network</label>
+
+                      <div class="token-select">
+                        <button type="button" class="token-select__selected">
+                          <img class="token-select__icon" width="20" height="20" src="./img/bitcoin.svg" alt="token">
+                          <p class="token-select__text">Bitcoin (BTC)</p>
+                          <img class="token-select__arrow" width="20" height="20"
+                            src="./img/icons/chevron-down-outline.svg" alt="token">
+                        </button>
+
+                        <ul class="token-select__list">
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item token-select__item--head">
+                            <div class="token-select__item-border"></div>
+                            <p class="token-select__item-label">FIAT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+
+                          <li class="token-select__item">
+                            <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                            <p class="token-select__text">USDT</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="input__item">
+                    <label class="input__item-label" for="">Amount</label>
+                    <div class="input__item-container">
+                      <input class="input__item-input" type="text" value="0.000497">
+                      <img class="input__item-icon" width="20" height="20" src="./img/bitcoin.svg" alt="bitcoin">
+
+                      <div class="input__item-token">BTC</div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="modal__footer">
+              <button type="submit" class="modal__btn btn">SEND</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="modal" id="deposit2">
+        <div class="modal-content">
+          <form class="modal__form modal__form--mini" action="#">
+            <div class="modal__head">
+              <div class="modal__logo">
+                <img width="100" height="21" src="./img/card-logo-black.svg" alt="logo">
+              </div>
+
+              <img class="modal__check-pic" width="160" height="160" src="./img/verification-completed-check.svg"
+                alt="check">
+
+              <h2 class="modal__title">Transaction completed successfully</h2>
+
+              <p class="modal__text">
+                Lorem ipsum dolor sit amet consectetur. Amet ullamcorper mauris sollicitudin odio odio ornare proin.
+                Rutrum sem pretium augue tempus odio.
+              </p>
+
+              <button class="close-modal-btn"><img src="./img/icons/close-modal.svg" alt="close"></button>
+            </div>
+
+
+            <div class="modal__footer">
+              <button type="submit" class="modal__btn btn">MAIN PAGE</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="modal" id="wallet-swap-1">
+        <div class="modal-content">
+          <form class="modal__form" action="#">
+            <div class="modal__head">
+              <div class="modal__logo">
+                <img width="100" height="21" src="./img/card-logo-black.svg" alt="logo">
+              </div>
+
+              <h2 class="modal__title">Swap Transaction</h2>
+
+              <button class="close-modal-btn"><img src="./img/icons/close-modal.svg" alt="close"></button>
+            </div>
+
+            <div class="modal__main">
+              <div class="swap">
+                <div class="swap__block">
+                  <div class="swap__block-label">From</div>
+
+                  <div class="input__list">
+                    <div class="input__items">
+                      <div class="input__item">
+                        <label class="input__item-label" for="">Token</label>
+
+                        <div class="token-select">
+                          <button type="button" class="token-select__selected">
+                            <img class="token-select__icon" width="20" height="20" src="./img/bitcoin.svg" alt="token">
+                            <p class="token-select__text">Bitcoin (BTC)</p>
+                            <img class="token-select__arrow" width="20" height="20"
+                              src="./img/icons/chevron-down-outline.svg" alt="token">
+                          </button>
+
+                          <ul class="token-select__list">
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item token-select__item--head">
+                              <div class="token-select__item-border"></div>
+                              <p class="token-select__item-label">FIAT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="input__item">
+                        <label class="input__item-label" for="">Network</label>
+
+                        <div class="token-select">
+                          <button type="button" class="token-select__selected">
+                            <img class="token-select__icon" width="20" height="20" src="./img/bitcoin.svg" alt="token">
+                            <p class="token-select__text">Bitcoin (BTC)</p>
+                            <img class="token-select__arrow" width="20" height="20"
+                              src="./img/icons/chevron-down-outline.svg" alt="token">
+                          </button>
+
+                          <ul class="token-select__list">
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item token-select__item--head">
+                              <div class="token-select__item-border"></div>
+                              <p class="token-select__item-label">FIAT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="input__item">
+                      <label class="input__item-label" for="">Amount</label>
+                      <div class="input__item-container">
+                        <input class="input__item-input" type="text" value="0.000497">
+                        <img class="input__item-icon" width="20" height="20" src="./img/bitcoin.svg" alt="bitcoin">
+
+                        <div class="input__item-token">BTC</div>
+                      </div>
+
+                      <div class="input__item-footer">
+                        <div class="input__item-info">Network fee: 10 TRX</div>
+                        <a class="input__item-all" href="#">All</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swap__arrow">
+                  <img class="swap__arrow-icon" width="40" height="40" src="./img/icons/swap-arrow.svg"
+                    alt="swap arrow icon">
+                </div>
+
+                <div class="swap__block">
+                  <div class="swap__block-label">To</div>
+
+                  <div class="input__list">
+                    <div class="input__items">
+                      <div class="input__item">
+                        <label class="input__item-label" for="">Token</label>
+
+                        <div class="token-select">
+                          <button type="button" class="token-select__selected">
+                            <img class="token-select__icon" width="20" height="20" src="./img/bitcoin.svg" alt="token">
+                            <p class="token-select__text">Bitcoin (BTC)</p>
+                            <img class="token-select__arrow" width="20" height="20"
+                              src="./img/icons/chevron-down-outline.svg" alt="token">
+                          </button>
+
+                          <ul class="token-select__list">
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item token-select__item--head">
+                              <div class="token-select__item-border"></div>
+                              <p class="token-select__item-label">FIAT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="input__item">
+                        <label class="input__item-label" for="">Network</label>
+
+                        <div class="token-select">
+                          <button type="button" class="token-select__selected">
+                            <img class="token-select__icon" width="20" height="20" src="./img/bitcoin.svg" alt="token">
+                            <p class="token-select__text">Bitcoin (BTC)</p>
+                            <img class="token-select__arrow" width="20" height="20"
+                              src="./img/icons/chevron-down-outline.svg" alt="token">
+                          </button>
+
+                          <ul class="token-select__list">
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item token-select__item--head">
+                              <div class="token-select__item-border"></div>
+                              <p class="token-select__item-label">FIAT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+
+                            <li class="token-select__item">
+                              <img class="token-select__icon" width="20" height="20" src="./img/tether.svg" alt="token">
+                              <p class="token-select__text">USDT</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="input__item">
+                      <label class="input__item-label" for="">Amount</label>
+                      <div class="input__item-container">
+                        <input class="input__item-input" type="text" value="0.000497">
+                        <img class="input__item-icon" width="20" height="20" src="./img/bitcoin.svg" alt="bitcoin">
+
+                        <div class="input__item-token">ETH</div>
+                      </div>
+
+                      <div class="input__item-footer">
+                        <div class="input__item-info">Network fee: 10 TRX</div>
+                        <a class="input__item-all" href="#">All</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal__footer">
+              <button type="submit" class="modal__btn btn">SWAP</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
 
 
       <div class="modal" id="wallet-swap-2">

@@ -3,6 +3,41 @@
   flex-direction: column;
   min-height: 100vh;
   // overflow: hidden;
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--gradient {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      left: 10%;
+      width: 358px;
+      height: 358px;
+      border-radius: 100%;
+      background: linear-gradient(117deg, #10ad74 0%, #00663e 100%);
+      filter: blur(368.8941345214844px);
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      right: 10%;
+      width: 358px;
+      height: 358px;
+      border-radius: 100%;
+      background: linear-gradient(144deg, #af56ff 0%, #f76dfc 100%);
+      filter: blur(368.8941345214844px);
+      z-index: -1;
+    }
+  }
 }
 
 .inner {
